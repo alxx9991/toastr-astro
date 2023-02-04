@@ -25,7 +25,7 @@ const Header = () => {
           <Nav></Nav>
         </Row>
       </header>
-      <div className="md:hidden">
+      <div className="hidden">
         <MobileNav
           className={"absolute z-20 w-screen bg-10"}
           clickHandler={hamburgerClickHandler}
