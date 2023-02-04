@@ -57,7 +57,7 @@ import Button from "../ui/Button";
     <p class="subtitle-bold text-primary">Why Us</p>
     <h2>What you get</h2>
   </Row>
-  <div class="penis">
+  <Row className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
     <div
       class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
     >
@@ -117,7 +117,8 @@ import Button from "../ui/Button";
         experience.
       </p>
     </div>
-  </div>
+  </Row>
+
   <Row className={"mt-16 flex justify-center"}>
     <a href="#pricing">
       <Button full={false}>See Plans</Button>
