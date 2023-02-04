@@ -29,7 +29,7 @@ const Nav = () => {
       </nav>
 
       {/* DESKTOP */}
-      <nav className="button-text z-60 hidden min-w-[42rem] items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex lg:translate-x-[-50%]">
+      <nav className="button-text z-60 hidden min-w-[42rem] animate-fadeFromTopNav items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex">
         <a href="#home" className={linkContainerStyle} aria-label="Toastr Logo">
           <img src={logoSvgReference} alt="toastr logo" />
         </a>

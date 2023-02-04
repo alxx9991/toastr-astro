@@ -63,6 +63,66 @@ module.exports = {
         md: "1 / span 8",
         lg: "1 / span 14",
       },
+      animation: {
+        fadeFromLeft: "fadeFromLeft 1s ease 0s 1 normal forwards",
+        fadeFromRight: "fadeFromRight 1s ease 0s 1 normal forwards",
+        fadeIn: "fadeIn 1s ease 0s 1 normal forwards",
+        fadeFromBottom: "fadeFromBottom 1s ease 0s 1 normal forwards",
+        fadeFromBottom1: "fadeFromBottom 1s ease 0.2s 1 normal both",
+        fadeFromBottom2: "fadeFromBottom 1s ease 0.45s 1 normal both",
+        fadeFromBottom3: "fadeFromBottom 1s ease 0.6s 1 normal both",
+        fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s normal both",
+      },
+      keyframes: {
+        fadeFromLeft: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(-50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0)",
+          },
+        },
+        fadeFromRight: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0)",
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+        fadeFromBottom: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px)",
+          },
+        },
+        fadeFromTopNav: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-200px) translateX(-50%)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px) translateX(-50%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

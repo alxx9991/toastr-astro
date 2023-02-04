@@ -11,34 +11,34 @@ const Hero = () => {
     <>
       <div className="full-width-section bg-bg pt-16 text-center md:pt-32 lg:mb-48 lg:pt-24">
         <Row className="relative mb-16 flex flex-col gap-16 md:mb-12 md:gap-20 md:px-16 lg:gap-8">
-          <div className="absolute inset-0 hidden -translate-x-20 translate-y-20 md:block">
+          <div className="absolute inset-0 hidden -translate-x-20 translate-y-20 animate-fadeFromLeft md:block">
             <img src={leftThingSvgReference} alt="left decoration" />
           </div>
-          <div className="absolute left-0 bottom-0 block -translate-y-16 md:hidden">
+          <div className="absolute left-0 bottom-0 block -translate-y-16 animate-fadeFromLeft md:hidden">
             <img
               src={leftThingMobileSvgReference}
               alt="left decoration mobile"
             />
           </div>
-          <div className="absolute right-0 top-0 hidden translate-x-20 -translate-y-40 overflow-x-visible md:block">
+          <div className="absolute right-0 top-0 hidden translate-x-20 -translate-y-40 animate-fadeFromRight overflow-x-visible md:block lg:-translate-y-24">
             <img src={rightThingSvgReference} alt="right decoration" />
           </div>
-          <div className="absolute right-0 top-0 block translate-x-1 -translate-y-14 overflow-x-visible md:hidden">
+          <div className="absolute right-0 top-0 block translate-x-1 -translate-y-14 animate-fadeFromRight overflow-x-visible md:hidden">
             <img
               src={rightThingMobileSvgReference}
               alt="right decoration mobile"
             ></img>
           </div>
-          <div className="relative z-10 flex flex-col px-6 md:gap-2 md:px-0 lg:gap-2">
+          <div className="relative z-10 flex animate-fadeFromBottom flex-col px-6 md:gap-2 md:px-0 lg:gap-2">
             <h1>Your One Stop Shop for</h1>
             <h1 className="text-primary">Web Design and Development</h1>
           </div>
-          <p className="body lg:subtitle z-10 px-6 md:px-0">
+          <p className="body lg:subtitle z-10 animate-fadeFromBottom px-6 md:px-0">
             Beautiful, modern, 100% hand-coded websites for service based
             businesses starting at $249/mo.
           </p>
         </Row>
-        <Row className="mb-20 lg:mb-16">
+        <Row className="mb-20 animate-fadeFromBottom lg:mb-16">
           <a href="#pricing">
             <Button>See Plans</Button>
           </a>

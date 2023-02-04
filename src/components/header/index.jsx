@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <header className="full-width-section z-30 bg-bg" id="home">
         <Row className="relative mt-10 mb-4 flex flex-row justify-between px-4  md:mt-12 md:flex-col md:gap-8 md:px-0 md:text-center lg:mt-14 lg:flex-row lg:items-center lg:justify-between">
-          <p className="logo-text">Toastr</p>
+          <p className="logo-text animate-fadeFromLeft">Toastr</p>
           <button
             className="md:hidden"
             onClick={hamburgerClickHandler}
