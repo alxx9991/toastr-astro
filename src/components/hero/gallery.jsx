@@ -5,21 +5,15 @@ const Gallery = () => {
         <img
           src={"/images/gallery1.webp"}
           alt="Example website - physiotherapy clinic"
-          loading="lazy"
         />
       </div>
       <div>
-        <img
-          src={"/images/gallery2.webp"}
-          alt="Example website - cafe"
-          loading="lazy"
-        />
+        <img src={"/images/gallery2.webp"} alt="Example website - cafe" />
       </div>
       <div>
         <img
           src={"/images/gallery3.webp"}
           alt="Example website - coffee shop"
-          loading="lazy"
         />
       </div>
     </div>
