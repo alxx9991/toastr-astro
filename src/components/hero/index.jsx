@@ -23,13 +23,7 @@ const Hero = () => {
           <div className="absolute right-0 top-0 hidden translate-x-20 -translate-y-24 md:block">
             <img src={rightThingSvgReference} alt="right decoration" />
           </div>
-          <div
-            // initial={{ x: 35, y: -55, opacity: 0 }}
-            // whileInView={{ x: 5, y: -55, opacity: 1 }}
-            // transition={{ duration: 0.7, delay: 0.4 }}
-            // viewport={{ once: true }}
-            className="absolute right-0 top-0 block translate-x-1 -translate-y-14 overflow-x-visible md:hidden"
-          >
+          <div className="absolute right-0 top-0 block translate-x-1 -translate-y-14 overflow-x-visible md:hidden">
             <img
               src={rightThingMobileSvgReference}
               alt="right decoration mobile"

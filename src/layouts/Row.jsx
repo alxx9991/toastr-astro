@@ -87,10 +87,15 @@ const Row = ({
   el = 14,
   children,
   className,
+  style = {},
 }) => {
   const classes = `row-auto ${ssConfig[ss]} ${esConfig[es]} ${smConfig[sm]} ${emConfig[em]} ${slConfig[sl]} ${elConfig[el]} ${className}`;
 
-  return <div className={classes}>{children}</div>;
+  return (
+    <div className={classes} style={style}>
+      {children}
+    </div>
+  );
 };
 
 export default Row;

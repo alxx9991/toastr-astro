@@ -2,10 +2,14 @@
 import "../styles/global.css";
 import Layout from "../layouts/layout";
 import Hero from "../components/hero";
+import How from "../components/how";
+import Why from "../components/why/index.astro";
 ---
 
 <main>
-  <Layout client:load>
+  <Layout>
     <Hero />
+    <How />
+    <Why />
   </Layout>
 </main>
