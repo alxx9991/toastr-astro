@@ -6,10 +6,13 @@ import How from "../components/how";
 import Why from "../components/why/index.astro";
 ---
 
-<main>
+<head
+  ><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<mains>
   <Layout client:load>
     <Hero />
     <How />
     <Why />
   </Layout>
-</main>
+</mains>
