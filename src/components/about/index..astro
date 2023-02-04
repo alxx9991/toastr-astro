@@ -1,0 +1,39 @@
+---
+import Row from "../../layouts/Row";
+import { Image } from "@astrojs/image/components";
+---
+
+<div class="full-width-section mb-16 lg:mb-24" id="about">
+  <Row className={"my-12 flex flex-col gap-4 text-center md:my-12"}>
+    <p class="subtitle-bold text-primary">About Us</p>
+    <h2>Meet the pair behind Toastr</h2>
+  </Row>
+  <Row>
+    <div
+      class="flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:gap-8"
+    >
+      <div class="md:max-w-[584px]">
+        <Image
+          src={"/images/about.webp"}
+          alt="Alex and Anna"
+          loading="lazy"
+          width={1168}
+          height={920}
+        />
+      </div>
+      <div
+        class="flex flex-col gap-2 px-4 md:max-w-[584px] md:pt-4 lg:max-w-[420px]"
+      >
+        <p class="subtitle-bold text-primary">Our Story</p>
+        <p class="body text-left">
+          Hi, we{"'"}re co-founders Alex and Anna. Our goal is to help business
+          owners build their digital presence, reach more clients and grow their
+          business.<br />
+          <br />We{"'"}ve spent years crafting our expertise in web development
+          and design, and we want to bring those skills to you and your
+          business.
+        </p>
+      </div>
+    </div>
+  </Row>
+</div>

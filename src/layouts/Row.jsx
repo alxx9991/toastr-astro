@@ -86,7 +86,7 @@ const Row = ({
   sl = 2,
   el = 14,
   children,
-  className,
+  className = "",
   style = {},
 }) => {
   const classes = `row-auto ${ssConfig[ss]} ${esConfig[es]} ${smConfig[sm]} ${emConfig[em]} ${slConfig[sl]} ${elConfig[el]} ${className}`;

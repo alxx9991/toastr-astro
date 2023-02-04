@@ -57,65 +57,83 @@ import Button from "../ui/Button";
     <p class="subtitle-bold text-primary">Why Us</p>
     <h2>What you get</h2>
   </Row>
-  <Row className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">100% Satisfaction. 0% Risk.</p>
-      <p class="body">
-        Cancel anytime. No deposit. 3-month refund period. We guarantee your
-        satisfaction.
-      </p>
+  <Row
+    className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 items-center"
+  >
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">
+          100% Satisfaction. 0% Risk.
+        </p>
+        <p class="body">
+          Cancel anytime. No deposit. 3-month refund period. We guarantee your
+          satisfaction.
+        </p>
+      </div>
     </div>
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={serviceIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">24/7 Customer Service</p>
-      <p class="body">
-        Responsive and available to offer support when you need it. Feel looked
-        after with us
-      </p>
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={serviceIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">24/7 Customer Service</p>
+        <p class="body">
+          Responsive and available to offer support when you need it. Feel
+          looked after with us
+        </p>
+      </div>
     </div>
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={analyticsIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">Google Analytics</p>
-      <p class="body">
-        Measure your traffic and learn how to convert visitors into customers
-      </p>
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={analyticsIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">Google Analytics</p>
+        <p class="body">
+          Measure your traffic and learn how to convert visitors into customers
+        </p>
+      </div>
     </div>
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={socialIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">Social Media Integration</p>
-      <p class="body">
-        Embed social feeds, review platforms, and other social tools to showcase
-        your work
-      </p>
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={socialIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">Social Media Integration</p>
+        <p class="body">
+          Embed social feeds, review platforms, and other social tools to
+          showcase your work
+        </p>
+      </div>
     </div>
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={lightningIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">Built for speed</p>
-      <p class="body">
-        Performance optimised to help you rank highly on search engines and
-        bring traffic to your website.
-      </p>
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={lightningIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">Built for speed</p>
+        <p class="body">
+          Performance optimised to help you rank highly on search engines and
+          bring traffic to your website.
+        </p>
+      </div>
     </div>
-    <div
-      class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
-    >
-      <img src={monthlyIconReference} alt="reason icon" loading="lazy" />
-      <p class="subtitle-bold mt-4 text-primary">All Inclusive Monthly Plan</p>
-      <p class="body">
-        Hosting, technical support, unlimited updates built in to simplify your
-        experience.
-      </p>
+    <div class="flex justify-center">
+      <div
+        class="flex h-[260px] w-[300px] flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+      >
+        <img src={monthlyIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-4 text-primary">
+          All Inclusive Monthly Plan
+        </p>
+        <p class="body">
+          Hosting, technical support, unlimited updates built in to simplify
+          your experience.
+        </p>
+      </div>
     </div>
   </Row>
 

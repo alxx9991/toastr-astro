@@ -20,7 +20,7 @@ const Hero = () => {
               alt="left decoration mobile"
             />
           </div>
-          <div className="absolute right-0 top-0 hidden translate-x-20 -translate-y-24 md:block">
+          <div className="absolute right-0 top-0 hidden translate-x-20 -translate-y-40 overflow-x-visible md:block">
             <img src={rightThingSvgReference} alt="right decoration" />
           </div>
           <div className="absolute right-0 top-0 block translate-x-1 -translate-y-14 overflow-x-visible md:hidden">
