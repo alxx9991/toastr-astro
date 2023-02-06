@@ -71,7 +71,9 @@ module.exports = {
         fadeFromBottom1: "fadeFromBottom 1s ease 0.2s 1 normal both",
         fadeFromBottom2: "fadeFromBottom 1s ease 0.45s 1 normal both",
         fadeFromBottom3: "fadeFromBottom 1s ease 0.6s 1 normal both",
-        fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s normal both",
+        fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s 1 normal both",
+        mobileMenuDrop: "mobileMenuDrop 0.5s ease 0s 1 normal forwards",
+        mobileMenuWithdraw: "mobileMenuWithdraw 0.5s ease 0s 1 normal forwards",
       },
       keyframes: {
         fadeFromLeft: {
@@ -120,6 +122,22 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translateY(0px) translateX(-50%)",
+          },
+        },
+        mobileMenuDrop: {
+          "0%": {
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            transform: "translateY(0%)",
+          },
+        },
+        mobileMenuWithdraw: {
+          "0%": {
+            transform: "translateY(0%)",
+          },
+          "100%": {
+            transform: "translateY(-100%)",
           },
         },
       },

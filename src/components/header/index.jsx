@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Row from "../../layouts/Row";
 import hamburgerSvgReference from "/icons/hamburger.svg";
 import Nav from "./Nav";
@@ -6,8 +6,21 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileMenuShouldRender, setMobileMenuShouldRender] =
+    useState(isMobileMenuOpen);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      setMobileMenuShouldRender(true);
+    }
+  }, [isMobileMenuOpen]);
+
   const hamburgerClickHandler = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
+  };
+
+  const onAnimationEnd = () => {
+    if (!isMobileMenuOpen) setMobileMenuShouldRender(false);
   };
 
   return (
@@ -25,13 +38,19 @@ const Header = () => {
           <Nav></Nav>
         </Row>
       </header>
-      <div className="hidden">
-        <MobileNav
-          className={"absolute z-20 w-screen bg-10"}
-          clickHandler={hamburgerClickHandler}
-          isMobileMenuOpen={isMobileMenuOpen}
-        ></MobileNav>
-      </div>
+      {mobileMenuShouldRender && (
+        <div>
+          <MobileNav
+            className={`absolute z-20 w-screen ${
+              isMobileMenuOpen
+                ? "animate-mobileMenuDrop"
+                : "animate-mobileMenuWithdraw"
+            } bg-10`}
+            onAnimationEnd={onAnimationEnd}
+            clickHandler={hamburgerClickHandler}
+          ></MobileNav>
+        </div>
+      )}
     </>
   );
 };

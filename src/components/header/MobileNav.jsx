@@ -1,7 +1,7 @@
-const MobileNav = ({ className, clickHandler }) => {
+const MobileNav = ({ className, clickHandler, onAnimationEnd }) => {
   const linkStyle = "body font-medium";
   return (
-    <div className={className}>
+    <div className={className} onAnimationEnd={onAnimationEnd}>
       <nav className="flex flex-col gap-8 px-6 py-8 shadow-md">
         <a onClick={clickHandler} className={linkStyle} href="#how">
           How It Works
