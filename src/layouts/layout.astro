@@ -1,0 +1,23 @@
+---
+import Header from "../components/header";
+import Footer from "../components/footer";
+---
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/icons/icon.png" type="image/x-icon" />
+  <meta
+    name="description"
+    content="Your one stop shop for web design and development to build your online presence. Get a beautiful website with Toastr with unlimited edits and technical support."
+  />
+  <title>Toastr: Website Design and Development for Small Businesses</title>
+</head>
+<body>
+  <main>
+    <div class="full-grid">
+      <Header client:load />
+      <slot />
+      <Footer client:idle />
+    </div>
+  </main>
+</body>

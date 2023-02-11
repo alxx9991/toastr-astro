@@ -7,45 +7,45 @@ const Nav = () => {
   return (
     <>
       {/* MOBILE */}
-      <nav className="button-text z-20 hidden items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg md:flex lg:hidden">
-        <a href="#home" className={linkContainerStyle} aria-label="Toastr Logo">
+      <nav className="button-text z-20 hidden items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg md:flex lg:hidden ">
+        <a href="/" className={linkContainerStyle} aria-label="Toastr Logo">
           <img src={logoSvgReference} alt="toastr logo" />
         </a>
-        <a href="#how" className={linkContainerStyle}>
+        <a href="/how" className={linkContainerStyle}>
           How It Works
         </a>
-        <a href="#why" className={linkContainerStyle}>
+        <a href="/why" className={linkContainerStyle}>
           Why Us
         </a>
-        <a href="#about" className={linkContainerStyle}>
+        <a href="/about" className={linkContainerStyle}>
           About Us
         </a>
-        <a href="#pricing" className={linkContainerStyle}>
+        <a href="/pricing" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="#contact" className={linkContainerStyle}>
+        <a href="/contact" className={linkContainerStyle}>
           Contact
         </a>
       </nav>
 
       {/* DESKTOP */}
-      <nav className="button-text z-60 hidden min-w-[42rem] animate-fadeFromTopNav items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex">
-        <a href="#home" className={linkContainerStyle} aria-label="Toastr Logo">
+      <nav className="button-text z-60 hidden min-w-[42rem] items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex lg:translate-x-[-50%]">
+        <a href="/" className={linkContainerStyle} aria-label="Toastr Logo">
           <img src={logoSvgReference} alt="toastr logo" />
         </a>
-        <a href="#how" className={linkContainerStyle}>
+        <a href="/how" className={linkContainerStyle}>
           How It Works
         </a>
-        <a href="#why" className={linkContainerStyle}>
+        <a href="/why" className={linkContainerStyle}>
           Why Us
         </a>
-        <a href="#about" className={linkContainerStyle}>
+        <a href="/about" className={linkContainerStyle}>
           About Us
         </a>
-        <a href="#pricing" className={linkContainerStyle}>
+        <a href="/pricing" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="#contact" className={linkContainerStyle}>
+        <a href="/contact" className={linkContainerStyle}>
           Contact
         </a>
       </nav>

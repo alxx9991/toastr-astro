@@ -9,7 +9,7 @@ import rightThingMobileSvgReference from "/icons/right-thing-mobile.svg";
 const Hero = () => {
   return (
     <>
-      <div className="full-width-section bg-bg pt-16 text-center md:pt-32 lg:mb-48 lg:pt-24">
+      <div className="full-width-section bg-bg pt-16 text-center md:pt-32 lg:mb-48 lg:pt-14">
         <Row className="relative mb-16 flex flex-col gap-16 md:mb-12 md:gap-20 md:px-16 lg:gap-8">
           <div className="absolute inset-0 hidden -translate-x-20 translate-y-20 md:block">
             <img

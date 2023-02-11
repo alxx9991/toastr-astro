@@ -106,7 +106,7 @@ const How = () => {
   ];
 
   return (
-    <div className="full-width-section mb-24 pt-16 lg:pt-0" id="how">
+    <div className="full-width-section mb-24 pt-16 lg:pt-10" id="how">
       <Row className="mb-16 flex flex-col gap-4 text-center">
         <p className="subtitle-bold text-primary">How It Works</p>
         <h2>4 simple steps to build your dream website</h2>
