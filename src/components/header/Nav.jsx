@@ -23,7 +23,7 @@ const Nav = () => {
         <a href="/pricing" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="/contact" className={linkContainerStyle}>
+        <a href="/#contact" className={linkContainerStyle}>
           Contact
         </a>
       </nav>
@@ -45,7 +45,7 @@ const Nav = () => {
         <a href="/pricing" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="/contact" className={linkContainerStyle}>
+        <a href="/#contact" className={linkContainerStyle}>
           Contact
         </a>
       </nav>
