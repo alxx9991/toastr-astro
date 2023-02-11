@@ -30,22 +30,27 @@ const Nav = () => {
 
       {/* DESKTOP */}
       <nav className="button-text z-60 hidden min-w-[42rem] items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex lg:translate-x-[-50%]">
-        <a href="/" className={linkContainerStyle} aria-label="Toastr Logo">
+        <a
+          href="/"
+          rel="prefetch"
+          className={linkContainerStyle}
+          aria-label="Toastr Logo"
+        >
           <img src={logoSvgReference} alt="toastr logo" />
         </a>
-        <a href="/how" className={linkContainerStyle}>
+        <a href="/how" rel="prefetch" className={linkContainerStyle}>
           How It Works
         </a>
-        <a href="/why" className={linkContainerStyle}>
+        <a href="/why" rel="prefetch" className={linkContainerStyle}>
           Why Us
         </a>
-        <a href="/about" className={linkContainerStyle}>
+        <a href="/about" rel="prefetch" className={linkContainerStyle}>
           About Us
         </a>
-        <a href="/pricing" className={linkContainerStyle}>
+        <a href="/pricing" rel="prefetch" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="/#contact" className={linkContainerStyle}>
+        <a href="/#contact" rel="prefetch" className={linkContainerStyle}>
           Contact
         </a>
       </nav>
