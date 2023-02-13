@@ -38,19 +38,19 @@ const Nav = () => {
         >
           <img src={logoSvgReference} alt="toastr logo" />
         </a>
-        <a href="/how" rel="prefetch" className={linkContainerStyle}>
+        <a href="/how" className={linkContainerStyle}>
           How It Works
         </a>
-        <a href="/why" rel="prefetch" className={linkContainerStyle}>
+        <a href="/why" className={linkContainerStyle}>
           Why Us
         </a>
-        <a href="/about" rel="prefetch" className={linkContainerStyle}>
+        <a href="/about" className={linkContainerStyle}>
           About Us
         </a>
-        <a href="/pricing" rel="prefetch" className={linkContainerStyle}>
+        <a href="/pricing" className={linkContainerStyle}>
           Pricing
         </a>
-        <a href="/#contact" rel="prefetch" className={linkContainerStyle}>
+        <a href="/#contact" className={linkContainerStyle}>
           Contact
         </a>
       </nav>
