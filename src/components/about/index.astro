@@ -4,12 +4,14 @@ import { Image } from "@astrojs/image/components";
 ---
 
 <div
-  class={"full-width-section -z-10 -mt-60 mb-0 hidden min-h-[350px] lg:block"}
+  class={"full-width-section -z-10 -mt-60 -mb-10 hidden min-h-[350px] lg:block"}
 >
   <div class="wave-container-small"></div>
 </div>
 <div class="full-width-section mb-16 lg:mb-24" id="about">
-  <Row className={"my-12 flex flex-col gap-4 text-center md:my-12 lg:mt-0"}>
+  <Row
+    className={"my-12 flex flex-col gap-4 text-center md:my-12 lg:mt-0 animate-fadeFromBottom"}
+  >
     <p class="subtitle-bold text-primary">About Us</p>
     <h2>Meet the pair behind Toastr</h2>
   </Row>
@@ -17,7 +19,7 @@ import { Image } from "@astrojs/image/components";
     <div
       class="flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:gap-8"
     >
-      <div class="md:max-w-[584px]">
+      <div class="animate-fadeFromBottom2 md:max-w-[584px]">
         <Image
           src={"/images/about.webp"}
           alt="Alex and Anna"
@@ -27,7 +29,7 @@ import { Image } from "@astrojs/image/components";
         />
       </div>
       <div
-        class="flex flex-col gap-2 px-4 md:max-w-[584px] md:pt-4 lg:max-w-[420px]"
+        class="flex animate-fadeFromBottom4 flex-col gap-2 px-4 md:max-w-[584px] md:pt-4 lg:max-w-[420px]"
       >
         <p class="subtitle-bold text-primary">Our Story</p>
         <p class="body text-left">

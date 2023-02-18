@@ -16,7 +16,7 @@ const Gallery = () => {
           width="668px"
           src={"/images/gallery2.webp"}
           alt="Example website - cafe"
-          className="animate-fadeFromBottom2"
+          className="animate-fadeFromBottom3"
         />
       </div>
       <div>
@@ -25,7 +25,7 @@ const Gallery = () => {
           width="668px"
           src={"/images/gallery3.webp"}
           alt="Example website - coffee shop"
-          className="animate-fadeFromBottom3"
+          className="animate-fadeFromBottom5"
         />
       </div>
     </div>

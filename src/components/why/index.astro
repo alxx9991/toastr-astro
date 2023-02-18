@@ -10,57 +10,19 @@ import socialIconReference from "/icons/social.svg";
 import lightningIconReference from "/icons/lightning.svg";
 
 import Button from "../ui/Button";
-
-// const REASONS = [
-//   {
-//     heading: "",
-//     content: "",
-//     icon: (
-//       <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
-//     ),
-//   },
-//   {
-//     heading: "All Inclusive Monthly Plan",
-//     content:
-//       "Hosting, technical support, unlimited updates built in to simplify your experience.",
-//     icon: <img src={monthlyIconReference} alt="reason icon" loading="lazy" />,
-//   },
-//   {
-//     heading: "24/7 Customer Service",
-//     content:
-//       "Responsive and available to offer support when you need it. Feel looked after with us",
-//     icon: <img src={serviceIconReference} alt="reason icon" loading="lazy" />,
-//   },
-//   {
-//     heading: "Google Analytics",
-//     content:
-//       "Measure your traffic and learn how to convert visitors into customers",
-//     icon: <img src={analyticsIconReference} alt="reason icon" loading="lazy" />,
-//   },
-//   {
-//     heading: "Social Media Integration",
-//     content:
-//       "Embed social feeds, review platforms, and other social tools to showcase your work",
-//     icon: <img src={socialIconReference} alt="reason icon" loading="lazy" />,
-//   },
-//   {
-//     heading: "Built for speed",
-//     content:
-//       "Performance optimised to help you rank highly on search engines and bring traffic to your website.",
-//     icon: <img src={lightningIconReference} alt="reason icon" loading="lazy" />,
-//   },
-// ];
 ---
 
 <div class="full-width-section bg-bg pb-16 pt-2" id="why">
-  <Row className={"my-12 flex flex-col gap-2 text-center md:my-12"}>
+  <Row
+    className={"my-12 flex flex-col gap-2 text-center md:my-12 animate-fadeFromBottom"}
+  >
     <p class="subtitle-bold text-primary">Why Us</p>
     <h2>What you get</h2>
   </Row>
   <Row
     className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 items-center"
   >
-    <div class="flex justify-center">
+    <div class="flex animate-fadeFromBottom1 justify-center">
       <div
         class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
@@ -74,7 +36,7 @@ import Button from "../ui/Button";
         </p>
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="flex animate-fadeFromBottom2 justify-center">
       <div
         class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
@@ -86,7 +48,7 @@ import Button from "../ui/Button";
         </p>
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="flex animate-fadeFromBottom3 justify-center">
       <div
         class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
@@ -97,7 +59,7 @@ import Button from "../ui/Button";
         </p>
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="flex animate-fadeFromBottom4 justify-center">
       <div
         class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
@@ -111,7 +73,7 @@ import Button from "../ui/Button";
     </div>
     <div class="flex justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[260px] w-[300px] animate-fadeFromBottom5 cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
         <img src={lightningIconReference} alt="reason icon" loading="lazy" />
         <p class="subtitle-bold mt-4 text-primary">Built for speed</p>
@@ -123,7 +85,7 @@ import Button from "../ui/Button";
     </div>
     <div class="flex justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[260px] w-[300px] animate-fadeFromBottom6 cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
       >
         <img src={monthlyIconReference} alt="reason icon" loading="lazy" />
         <p class="subtitle-bold mt-4 text-primary">
@@ -137,7 +99,7 @@ import Button from "../ui/Button";
     </div>
   </Row>
 
-  <Row className={"mt-16 flex justify-center"}>
+  <Row className={"mt-16 flex justify-center animate-fadeFromBottom7"}>
     <a href="#pricing">
       <Button full={false}>See Plans</Button>
     </a>

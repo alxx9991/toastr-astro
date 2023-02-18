@@ -7,7 +7,7 @@ const Footer = () => {
       id="contact"
     >
       <Row className="mb-16 flex flex-col items-center gap-6 px-8 lg:mb-16">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex animate-fadeFromBottom flex-col items-center gap-6">
           <h2>Level up your business today</h2>
           <p className="subtitle">
             Get in touch and see if we're right for you

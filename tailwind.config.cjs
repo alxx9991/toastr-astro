@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx,astro}",
@@ -65,15 +66,29 @@ module.exports = {
       },
       animation: {
         fadeFromLeft: "fadeFromLeft 1s ease 0s 1 normal forwards",
+        fadeFromLeft2: "fadeFromLeft 1s ease 0.1s 1 normal both",
+        fadeFromLeft3: "fadeFromLeft 1s ease 0.75s 1 normal both",
         fadeFromRight: "fadeFromRight 1s ease 0s 1 normal forwards",
+        fadeFromRight2: "fadeFromRight 1s ease 0.4s 1 normal both",
+        fadeFromRight3: "fadeFromRight 1s ease 1.25s 1 normal both",
         fadeIn: "fadeIn 1s ease 0s 1 normal forwards",
         fadeFromBottom: "fadeFromBottom 1s ease 0s 1 normal forwards",
         fadeFromBottom1: "fadeFromBottom 1s ease 0.2s 1 normal both",
-        fadeFromBottom2: "fadeFromBottom 1s ease 0.45s 1 normal both",
-        fadeFromBottom3: "fadeFromBottom 1s ease 0.6s 1 normal both",
+        fadeFromBottom2: "fadeFromBottom 1s ease 0.3s 1 normal both",
+        fadeFromBottom3: "fadeFromBottom 1s ease 0.4s 1 normal both",
+        fadeFromBottom4: "fadeFromBottom 1s ease 0.5s 1 normal both",
+        fadeFromBottom5: "fadeFromBottom 1s ease 0.6s 1 normal both",
+        fadeFromBottom6: "fadeFromBottom 1s ease 0.7s 1 normal both",
+        fadeFromBottom7: "fadeFromBottom 1s ease 0.8s 1 normal both",
         fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s 1 normal both",
         mobileMenuDrop: "mobileMenuDrop 0.5s ease 0s 1 normal forwards",
         mobileMenuWithdraw: "mobileMenuWithdraw 0.5s ease 0s 1 normal forwards",
+        dottedLineRevealRight:
+          "dottedLineRevealRight 0.4s ease 0.4s 1 normal both",
+        dottedLineRevealRight2:
+          "dottedLineRevealRight 0.4s ease 1s 1 normal both",
+        dottedLineRevealLeft:
+          "dottedLineRevealLeft 0.4s ease 0.7s 1 normal both",
       },
       keyframes: {
         fadeFromLeft: {
@@ -138,6 +153,16 @@ module.exports = {
           },
           "100%": {
             transform: "translateY(-100%)",
+          },
+        },
+        dottedLineRevealRight: {
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+        dottedLineRevealLeft: {
+          "100%": {
+            transform: "translateX(-100%)",
           },
         },
       },

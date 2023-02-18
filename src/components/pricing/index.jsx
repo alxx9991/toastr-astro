@@ -112,7 +112,7 @@ const Pricing = () => {
 
   return (
     <div className="full-width-section bg-bg pt-12 pb-20" id="pricing">
-      <Row className="mb-12 flex flex-col gap-2 px-6 text-center md:px-0">
+      <Row className="mb-12 flex animate-fadeFromBottom flex-col gap-2 px-6 text-center md:px-0">
         <p className="subtitle-bold text-primary">Pricing</p>
         <h2>Choose a plan that works for you</h2>
       </Row>
@@ -121,10 +121,16 @@ const Pricing = () => {
           "flex grid-cols-2 flex-col items-center gap-8 px-6 text-left md:grid md:items-stretch md:px-0 lg:grid-cols-3 lg:grid-rows-2"
         }
       >
-        <Plan {...PLANS[0]} className="row-span-2"></Plan>
-        <Plan {...PLANS[1]} className="row-span-2"></Plan>
-        <Extra {...EXTRAS[0]}></Extra>
-        <Extra {...EXTRAS[1]}></Extra>
+        <Plan
+          {...PLANS[0]}
+          className="row-span-2 animate-fadeFromBottom2"
+        ></Plan>
+        <Plan
+          {...PLANS[1]}
+          className="row-span-2 animate-fadeFromBottom4"
+        ></Plan>
+        <Extra {...EXTRAS[0]} className="animate-fadeFromBottom6"></Extra>
+        <Extra {...EXTRAS[1]} className="animate-fadeFromBottom7"></Extra>
       </Row>
     </div>
   );

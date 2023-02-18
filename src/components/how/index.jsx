@@ -82,7 +82,7 @@ const How = () => {
           alt="dotted line decoration"
           loading="lazy"
         />
-        ,
+        <div className="absolute inset-0 h-full w-full animate-dottedLineRevealRight bg-10"></div>
       </div>
     </div>,
     <div key={uuidv4()} className={`${connectorStyle} col-start-1 row-start-2`}>
@@ -92,6 +92,7 @@ const How = () => {
           alt="dotted line decoration"
           loading="lazy"
         />
+        <div className="animate absolute inset-0 h-full w-full animate-dottedLineRevealLeft bg-10"></div>
       </div>
     </div>,
     <div key={uuidv4()} className={`${connectorStyle} col-start-2 row-start-3`}>
@@ -101,6 +102,7 @@ const How = () => {
           alt="dotted line decoration"
           loading="lazy"
         />
+        <div className="absolute inset-0 h-full w-full animate-dottedLineRevealRight2 bg-10"></div>
       </div>
     </div>,
   ];
@@ -109,12 +111,12 @@ const How = () => {
     <div className="full-width-section mb-24 pt-16 lg:pt-10" id="how">
       <div
         className={
-          "full-width-section -z-10 -mt-72 mb-0 hidden min-h-[350px] lg:block"
+          "full-width-section -z-10 -mt-64 -mb-16 hidden min-h-[350px] lg:block"
         }
       >
         <div className="wave-container-small"></div>
       </div>
-      <Row className="mb-16 flex flex-col gap-4 text-center">
+      <Row className="mb-16 flex animate-fadeFromBottom flex-col gap-4 text-center">
         <p className="subtitle-bold text-primary">How It Works</p>
         <h2>4 simple steps to build your dream website</h2>
       </Row>
