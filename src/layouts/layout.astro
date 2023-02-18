@@ -3,7 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { getImage } from "@astrojs/image";
 
-const { aboutSrc } = await getImage({
+const { src: aboutSrc } = await getImage({
   src: import("/images/about.webp"),
   alt: "Alex and Anna",
   width: 1168,
