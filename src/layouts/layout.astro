@@ -4,11 +4,13 @@ import Footer from "../components/footer";
 import { getImage } from "@astrojs/image";
 
 const { src: aboutSrc } = await getImage({
-  src: import("/images/about.webp"),
+  src: import("../../../public/images/about.webp"),
   alt: "Alex and Anna",
   width: 1168,
   height: 920,
 });
+
+console.log(aboutSrc);
 ---
 
 <head>
