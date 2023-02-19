@@ -15,7 +15,7 @@ const Footer = () => {
           <a
             href="https://calendly.com/toastrstudio/30min"
             target="_blank"
-            className="button-large-text w-full max-w-[600px] rounded-3xl border-[2px] border-solid border-primary py-12 text-primary md:mt-6 lg:max-w-[800px]"
+            className="button-large-text w-full max-w-[600px] rounded-3xl border-[2px] border-solid border-primary py-12 text-primary hover:bg-primary hover:text-10 md:mt-6 lg:max-w-[800px]"
           >
             <button>Get started</button>
           </a>
@@ -23,7 +23,7 @@ const Footer = () => {
         <hr className="my-6 h-[1px] w-full border-none bg-80 opacity-50 md:mb-10 md:mt-12" />
         <div className="lg:flex lg:w-full lg:justify-between lg:text-left">
           <div>
-            <a href="#home" className="logo-text mb-4 lg:mb-2">
+            <a href="/" className="logo-text mb-4 lg:mb-2">
               Toastr
             </a>
             <p className="body lg:caption mt-3 hidden text-80 lg:block">
@@ -31,19 +31,19 @@ const Footer = () => {
             </p>
           </div>
           <nav className="mt-4 flex flex-col gap-8 lg:mt-0 lg:flex-row">
-            <a className="body" href="#how">
+            <a className="body" href="/how">
               How It Works
             </a>
-            <a className="body" href="#why">
+            <a className="body" href="/why">
               Why Us
             </a>
-            <a className="body" href="#about">
+            <a className="body" href="/about">
               About Us
             </a>
-            <a className="body" href="#pricing">
+            <a className="body" href="/pricing">
               Pricing
             </a>
-            <a className="body" href="#contact">
+            <a className="body" href="/#contact">
               Contact
             </a>
           </nav>
