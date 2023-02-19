@@ -15,7 +15,7 @@ const Footer = () => {
           <a
             href="https://calendly.com/toastrstudio/30min"
             target="_blank"
-            className="button-large-text w-full max-w-[600px] rounded-3xl border-[2px] border-solid border-primary py-12 text-primary hover:bg-primary hover:text-10 md:mt-6 lg:max-w-[800px]"
+            className="button-large-text w-full max-w-[600px] rounded-3xl border-[2px] border-solid border-primary py-12 text-primary transition-colors hover:bg-primary hover:text-10 md:mt-6 lg:max-w-[800px]"
           >
             <button>Get started</button>
           </a>

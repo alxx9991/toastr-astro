@@ -2,12 +2,12 @@ import logoSvgReference from "/icons/logo.svg";
 
 const Nav = () => {
   const linkContainerStyle =
-    "px-6 py-3 rounded-full flex items-center hover:bg-bg";
+    "px-6 py-3 rounded-full flex items-center hover:bg-bg hover:text-primary transition-colors";
 
   return (
     <>
       {/* MOBILE */}
-      <nav className="button-text z-20 hidden items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg md:flex lg:hidden ">
+      <nav className="button-text z-20 hidden items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg transition-colors md:flex lg:hidden ">
         <a href="/" className={linkContainerStyle} aria-label="Toastr Logo">
           <img src={logoSvgReference} alt="toastr logo" />
         </a>
@@ -29,7 +29,7 @@ const Nav = () => {
       </nav>
 
       {/* DESKTOP */}
-      <nav className="button-text z-60 hidden min-w-[42rem] items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg lg:fixed lg:left-[50%] lg:flex lg:translate-x-[-50%]">
+      <nav className="button-text z-60 hidden min-w-[42rem] items-stretch justify-between gap-1 rounded-full bg-10 px-1 py-1 shadow-lg transition-colors lg:fixed lg:left-[50%] lg:flex lg:translate-x-[-50%]">
         <a href="/" className={linkContainerStyle} aria-label="Toastr Logo">
           <img src={logoSvgReference} alt="toastr logo" />
         </a>

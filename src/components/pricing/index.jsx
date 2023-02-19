@@ -96,7 +96,7 @@ const Pricing = () => {
         <div className={`${pricingCardStyle} ${className}`}>
           <p className="subtitle-bold ">{title}</p>
           <p className="body2 mt-4 text-80">{content}</p>
-          <p className="button-large-text mt-12 -ml-4 w-max rounded-lg px-4 py-2 text-primary hover:bg-bg hover:underline">
+          <p className="button-large-text mt-12 -ml-4 w-max rounded-lg px-4 py-2 text-primary transition-colors hover:bg-bg hover:underline">
             <a
               href="https://calendly.com/toastrstudio/30min"
               target="_blank"
