@@ -43,7 +43,9 @@ const Header = () => {
         id="home"
       >
         <Row className="relative my-8 flex flex-row justify-between px-4  md:-mb-8 md:mt-12 md:flex-col md:gap-8 md:px-0 md:text-center lg:mb-0 lg:mt-14 lg:flex-row lg:items-center lg:justify-between">
-          <p className="logo-text">Toastr</p>
+          <p className="logo-text cursor-pointer">
+            <a href="/">Toastr</a>
+          </p>
           <button
             className="md:hidden"
             onClick={hamburgerClickHandler}
