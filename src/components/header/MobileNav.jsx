@@ -3,19 +3,22 @@ const MobileNav = ({ className, clickHandler, onAnimationEnd }) => {
   return (
     <div className={className} onAnimationEnd={onAnimationEnd}>
       <nav className="flex flex-col gap-8 px-6 py-8 shadow-md">
-        <a onClick={clickHandler} className={linkStyle} href="#how">
+        <a onClick={clickHandler} className={linkStyle} href="/">
+          Home
+        </a>
+        <a onClick={clickHandler} className={linkStyle} href="/how">
           How It Works
         </a>
-        <a onClick={clickHandler} className={linkStyle} href="#why">
+        <a onClick={clickHandler} className={linkStyle} href="/why">
           Why Us
         </a>
-        <a onClick={clickHandler} className={linkStyle} href="#about">
+        <a onClick={clickHandler} className={linkStyle} href="/about">
           About Us
         </a>
-        <a onClick={clickHandler} className={linkStyle} href="#pricing">
+        <a onClick={clickHandler} className={linkStyle} href="/pricing">
           Pricing
         </a>
-        <a onClick={clickHandler} className={linkStyle} href="#contact">
+        <a onClick={clickHandler} className={linkStyle} href="/#contact">
           Contact
         </a>
       </nav>

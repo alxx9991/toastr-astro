@@ -32,7 +32,6 @@
     @apply text-[14px] md:text-[15px] xl:text-[16px];
     font-weight: 400;
     min-height: 100%;
-    scroll-behavior: smooth;
     overflow-x: hidden;
   }
 

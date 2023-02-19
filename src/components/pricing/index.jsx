@@ -111,7 +111,10 @@ const Pricing = () => {
   };
 
   return (
-    <div className="full-width-section bg-bg pt-12 pb-20" id="pricing">
+    <div
+      className="full-width-section bg-bg pt-8 pb-20 md:pt-16 lg:pt-12"
+      id="pricing"
+    >
       <Row className="mb-12 flex animate-fadeFromBottom flex-col gap-2 px-6 text-center md:px-0">
         <p className="subtitle-bold text-primary">Pricing</p>
         <h2>Choose a plan that works for you</h2>

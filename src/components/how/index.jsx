@@ -108,7 +108,7 @@ const How = () => {
   ];
 
   return (
-    <div className="full-width-section mb-24 pt-16 lg:pt-10" id="how">
+    <div className="full-width-section mb-24 pt-10 md:pt-20 lg:pt-10" id="how">
       <div
         className={
           "full-width-section -z-10 -mt-64 -mb-16 hidden min-h-[350px] lg:block"
