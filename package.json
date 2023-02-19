@@ -30,9 +30,5 @@
   "devDependencies": {
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2"
-  },
-  "overrides": {
-    "react": "npm:@preact/compat@latest",
-    "react-dom": "npm:@preact/compat@latest"
   }
 }
