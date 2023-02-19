@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "preact/hooks";
 import Row from "../../layouts/Row";
 import hamburgerSvgReference from "/icons/hamburger.svg";
 import Nav from "./Nav";
