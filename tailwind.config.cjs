@@ -65,14 +65,14 @@ module.exports = {
         lg: "1 / span 14",
       },
       animation: {
-        fadeFromLeft: "fadeFromLeft 1s ease 0s 1 normal forwards",
+        fadeFromLeft: "fadeFromLeft 1s ease 0s 1 normal both",
         fadeFromLeft2: "fadeFromLeft 1s ease 0.1s 1 normal both",
         fadeFromLeft3: "fadeFromLeft 1s ease 0.75s 1 normal both",
-        fadeFromRight: "fadeFromRight 1s ease 0s 1 normal forwards",
+        fadeFromRight: "fadeFromRight 1s ease 0s 1 normal both",
         fadeFromRight2: "fadeFromRight 1s ease 0.4s 1 normal both",
         fadeFromRight3: "fadeFromRight 1s ease 1.25s 1 normal both",
-        fadeIn: "fadeIn 1s ease 0s 1 normal forwards",
-        fadeFromBottom: "fadeFromBottom 1s ease 0s 1 normal forwards",
+        fadeIn: "fadeIn 1s ease 0s 1 normal both",
+        fadeFromBottom: "fadeFromBottom 1s ease 0s 1 normal both",
         fadeFromBottom1: "fadeFromBottom 1s ease 0.2s 1 normal both",
         fadeFromBottom2: "fadeFromBottom 1s ease 0.3s 1 normal both",
         fadeFromBottom3: "fadeFromBottom 1s ease 0.4s 1 normal both",
@@ -80,9 +80,12 @@ module.exports = {
         fadeFromBottom5: "fadeFromBottom 1s ease 0.6s 1 normal both",
         fadeFromBottom6: "fadeFromBottom 1s ease 0.7s 1 normal both",
         fadeFromBottom7: "fadeFromBottom 1s ease 0.8s 1 normal both",
+        fadeFromTopGallery: "fadeFromTopGallery 1s ease 0.1s 1 normal both",
+        fadeFromLeftGallery: "fadeFromLeftGallery 1s ease 0.5s 1 normal both",
+        fadeFromRightGallery: "fadeFromRightGallery 1s ease 0.3s 1 normal both",
         fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s 1 normal both",
-        mobileMenuDrop: "mobileMenuDrop 0.5s ease 0s 1 normal forwards",
-        mobileMenuWithdraw: "mobileMenuWithdraw 0.5s ease 0s 1 normal forwards",
+        mobileMenuDrop: "mobileMenuDrop 0.5s ease 0s 1 normal both",
+        mobileMenuWithdraw: "mobileMenuWithdraw 0.5s ease 0s 1 normal both",
         dottedLineRevealRight:
           "dottedLineRevealRight 0.4s ease 0.4s 1 normal both",
         dottedLineRevealRight2:
@@ -96,6 +99,7 @@ module.exports = {
             opacity: 0,
             transform: "translateX(-50px)",
           },
+
           "100%": {
             opacity: 1,
             transform: "translateX(0)",
@@ -105,6 +109,32 @@ module.exports = {
           "0%": {
             opacity: 0,
             transform: "translateX(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0)",
+          },
+        },
+        fadeFromLeftGallery: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(-50px)",
+          },
+          "40%": {
+            opacity: 1,
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0)",
+          },
+        },
+        fadeFromRightGallery: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(50px)",
+          },
+          "40%": {
+            opacity: 1,
           },
           "100%": {
             opacity: 1,
@@ -123,6 +153,29 @@ module.exports = {
           "0%": {
             opacity: 0,
             transform: "translateY(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px)",
+          },
+        },
+        fadeFromTop: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px)",
+          },
+        },
+        fadeFromTopGallery: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-50px)",
+          },
+          "40%": {
+            opacity: 1,
           },
           "100%": {
             opacity: 1,
