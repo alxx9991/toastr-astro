@@ -2,8 +2,64 @@
 import "../styles/global.css";
 import Layout from "../layouts/layout.astro";
 import Hero from "../components/hero/index.astro";
+import Row from "../layouts/Row";
+import Pricing from "../components/pricing";
+import { Picture } from "@astrojs/image/components";
 ---
 
 <Layout>
   <Hero />
+  <div class="full-width-section mb-16 md:pt-4 lg:mb-24 lg:pt-12" id="about">
+    <Row
+      className={"mt-8 mb-12 flex flex-col gap-4 text-center md:my-12 lg:mt-0 md:mb-8 animate-fadeFromBottom"}
+    >
+      <p class="subtitle-bold text-primary">Introducing...</p>
+      <h2>Alex and Anna</h2>
+    </Row>
+    <Row>
+      <div
+        class="flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:gap-8"
+      >
+        <div class="animate-fadeFromBottom2 md:max-w-[584px]">
+          <!-- <Image
+            src={"/images/about.webp"}
+            alt="Alex and Anna"
+            loading="lazy"
+            width={1168}
+            height={920}
+          /> -->
+          <Picture
+            height={920}
+            width={1168}
+            src={"/images/about.webp"}
+            alt="Alex and Anna"
+            sizes="(min-width:0px)"
+            widths={[1168]}
+            aspectRatio={"1168:920"}
+          />
+        </div>
+        <div
+          class="flex animate-fadeFromBottom4 flex-col gap-2 px-4 md:max-w-[584px] md:pt-4 lg:max-w-[420px]"
+        >
+          <p class="subtitle-bold text-primary">About Us</p>
+          <p class="body text-left">
+            Hi, we{"'"}re the co-founders, Alex and Anna. Our goal is to help
+            business owners build their digital presence, reach more clients and
+            grow their business.<br />
+            <br />We{"'"}ve spent years crafting our expertise in web
+            development and design, and we want to bring those skills to you and
+            your business.
+          </p>
+          <p class="subtitle-bold pt-8 text-primary">Our Mission</p>
+          <p class="body text-left">
+            A good business website instills trust in the customers, and
+            exemplifies the professionalism of the service. Our mission is to
+            bring the power of fast, beautiful, modern websites back to the
+            people.
+          </p>
+        </div>
+      </div>
+    </Row>
+  </div>
+  <Pricing />
 </Layout>

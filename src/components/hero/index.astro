@@ -9,10 +9,10 @@ import { Picture } from "@astrojs/image/components";
 ---
 
 <div
-  class="full-width-section bg-bg pt-16 text-center md:pt-44 lg:mb-48 lg:pt-28"
+  class="full-width-section bg-bg pt-12 text-center md:pt-44 lg:mb-48 lg:pt-28"
 >
   <Row
-    className="relative mb-16 flex flex-col gap-16 md:mb-12 md:gap-20 md:px-16 lg:gap-8"
+    className="relative mb-12 flex flex-col gap-8 md:mb-12 md:gap-12 md:px-16 lg:gap-8"
   >
     <div
       class="absolute inset-0 hidden -translate-x-20 translate-y-20 md:block"
@@ -40,7 +40,7 @@ import { Picture } from "@astrojs/image/components";
       />
     </div>
     <div
-      class="absolute right-0 top-0 block translate-x-1 -translate-y-14 overflow-x-visible md:hidden"
+      class="absolute right-0 top-0 block translate-x-1 -translate-y-12 overflow-x-visible md:hidden"
     >
       <img
         src={rightThingMobileSvgReference}
@@ -59,7 +59,22 @@ import { Picture } from "@astrojs/image/components";
       starting at $249/mo.
     </p>
   </Row>
-  <Row className="mb-20 animate-fadeFromBottom lg:mb-16">
+  <Row>
+    <div class="mb-12 md:hidden">
+      <Picture
+        height={364}
+        width={341}
+        src={"/images/galleryM.png"}
+        alt="Example website - physiotherapy clinic"
+        class="animate-fadeFromBottom1"
+        sizes="(min-width:1280px)"
+        widths={[341]}
+        aspectRatio={"341:364"}
+        fit="cover"
+      />
+    </div>
+  </Row>
+  <Row className="mb-16 md:mb-20 animate-fadeFromBottom lg:mb-16">
     <a href="/pricing">
       <Button full={false}>See Plans</Button>
     </a>
