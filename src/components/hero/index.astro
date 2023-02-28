@@ -62,46 +62,46 @@ import { Picture } from "@astrojs/image/components";
   <Row>
     <div class="mb-12 md:hidden">
       <div class="flex h-[360px] items-center justify-center">
-        <div class="absolute -translate-y-[80px] shadow-lg">
+        <div class="absolute max-w-[180px] -translate-y-[80px] shadow-lg">
           <Picture
-            height={200}
-            width={180}
+            height={400}
+            width={360}
             src={"/images/gallery1M.png"}
             alt="Example website - cafe"
             class="animate-fadeFromTopGallery"
-            sizes="(min-width:1280px)"
-            widths={[180]}
-            aspectRatio={"180:200"}
+            sizes="(min-width:0px)"
+            widths={[360]}
+            aspectRatio={"360:400"}
             fit="cover"
           />
         </div>
         <div
-          class="absolute z-20 -translate-x-[80px] translate-y-[40px] shadow-lg"
+          class="absolute z-20 max-w-[180px] -translate-x-[80px] translate-y-[40px] shadow-lg"
         >
           <Picture
-            height={200}
-            width={180}
+            height={400}
+            width={360}
             src={"/images/gallery2M.png"}
             alt="Example website - coffee shop"
             class="animate-fadeFromLeftGallery"
-            sizes="(min-width:1280px)"
-            widths={[180]}
-            aspectRatio={"180:200"}
+            sizes="(min-width:0px)"
+            widths={[360]}
+            aspectRatio={"360:400"}
             fit="cover"
           />
         </div>
         <div
-          class="absolute z-10 translate-x-[80px] translate-y-[80px] shadow-lg"
+          class="absolute z-10 max-w-[180px] translate-x-[80px] translate-y-[80px] shadow-lg"
         >
           <Picture
-            height={200}
-            width={180}
+            height={400}
+            width={360}
             src={"/images/gallery3M.png"}
             alt="Example website - physiotherapy clinic"
             class="animate-fadeFromRightGallery"
-            sizes="(min-width:1280px)"
-            widths={[180]}
-            aspectRatio={"180:200"}
+            sizes="(min-width:0px)"
+            widths={[360]}
+            aspectRatio={"360:400"}
             fit="cover"
           />
         </div>
