@@ -17,7 +17,7 @@ const Step = ({ icon, iconL, number, heading, body, gridString }) => {
       <div className="absolute hidden translate-x-[-50%] translate-y-[-140%] md:block md:translate-y-0 md:translate-x-[-130%] lg:right-0 lg:translate-x-[-40%] lg:translate-y-[-100%]">
         {iconL}
       </div>
-      <div className="aspect-square w-max rounded-lg bg-tertiary p-2 text-center text-primary">
+      <div className="h-[35px] w-[35px] rounded-lg bg-tertiary p-2 text-center text-primary">
         {number}
       </div>
       <p className="subtitle-bold">{heading}</p>

@@ -38,7 +38,11 @@ const Header = ({ page }) => {
     <>
       <header
         className={`md:full-width-section fixed z-40 w-full  ${
-          page === "home" ? "bg-bg" : "bg-bg md:bg-10"
+          page === "home"
+            ? scrollPosition === 0
+              ? "bg-"
+              : "bg-bg"
+            : "bg-bg md:bg-10"
         } px-[10%] transition-all md:relative ${
           scrollPosition !== 0 && !mobileMenuShouldRender ? "shadow-md " : ""
         } md:relative md:px-0 md:shadow-none`}
