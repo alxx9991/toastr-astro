@@ -2,20 +2,21 @@ import Row from "../../layouts/Row";
 
 const Footer = () => {
   return (
-    <footer
-      className="full-width-section lg:pt-22 pt-20 text-center"
-      id="contact"
-    >
-      <Row className="mb-16 flex flex-col items-center gap-6 px-8 lg:mb-16">
-        <div className="flex animate-fadeFromBottom flex-col items-center gap-6">
-          <h2>Level up your business today</h2>
-          <p className="subtitle">
-            Get in touch and see if we're right for you
+    <footer className="full-width-section pt-16 text-center" id="contact">
+      <Row
+        ss={1}
+        es={7}
+        className="mb-16 flex flex-col items-center gap-6 px-[10%] lg:mb-16"
+      >
+        <div className="flex w-[320px] animate-fadeFromBottom flex-col items-center gap-6 md:w-[600px]">
+          <p className="max-w-[280px] text-body font-medium md:max-w-none">
+            Get in touch to see if what we do is right for you
           </p>
+          <h2>Let{"'"}s build your website</h2>
           <a
             href="https://calendly.com/toastrstudio/30min"
             target="_blank"
-            className="button-large-text w-full max-w-[600px] rounded-3xl border-[2px] border-solid border-primary py-12 text-primary transition-colors hover:bg-primary hover:text-10 md:mt-6 lg:max-w-[800px]"
+            className="button-large-text w-full rounded-3xl border-[2px] border-solid border-primary py-12 text-primary transition-colors hover:bg-primary hover:text-10 md:mt-6"
           >
             <button>Get started</button>
           </a>
@@ -30,7 +31,7 @@ const Footer = () => {
               Copyright 2022. Toastr. All rights reserved.
             </p>
           </div>
-          <nav className="mt-4 flex flex-col gap-8 lg:mt-0 lg:flex-row">
+          <nav className="mt-4 flex flex-col gap-8 md:flex-row lg:mt-0">
             <a className="body" href="/how">
               How It Works
             </a>

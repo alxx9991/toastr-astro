@@ -37,9 +37,10 @@ module.exports = {
       buttonMobile: ["14px", { lineHeight: "120%", fontWeight: 500 }],
     },
     colors: {
-      primary: "#E86F18",
+      primary: "#EA5436",
       secondary: "#3C1A00",
-      bg: "#FEFBF6",
+      tertiary: "#FFEEE2",
+      bg: "#FBF9F7",
       100: "#000000",
       90: "#323232",
       80: "#6B6B6B",
@@ -52,9 +53,9 @@ module.exports = {
         lg: "1280px",
       },
       gridTemplateColumns: {
-        sm: "calc((100% - 375px) / 2) repeat(4, 1fr) calc((100% - 375px) / 2)",
+        sm: "10% repeat(4, 1fr) 10%",
         md: "calc((100% - 768px) / 2) repeat(6, 1fr) calc((100% - 768px) / 2)",
-        lg: "calc((100% - 1100px) / 2) repeat(12,1fr) calc((100% - 1100px) / 2)",
+        lg: "calc((100% - 1200px) / 2) repeat(12,1fr) calc((100% - 1200px) / 2)",
       },
       gridTemplateRows: {
         "max-content": "max-content",
@@ -65,31 +66,33 @@ module.exports = {
         lg: "1 / span 14",
       },
       animation: {
-        fadeFromLeft: "fadeFromLeft 1s ease 0s 1 normal both",
-        fadeFromLeft2: "fadeFromLeft 1s ease 0.1s 1 normal both",
-        fadeFromLeft3: "fadeFromLeft 1s ease 0.75s 1 normal both",
-        fadeFromRight: "fadeFromRight 1s ease 0s 1 normal both",
-        fadeFromRight2: "fadeFromRight 1s ease 0.4s 1 normal both",
-        fadeFromRight3: "fadeFromRight 1s ease 1.25s 1 normal both",
-        fadeIn: "fadeIn 1s ease 0s 1 normal both",
-        fadeFromBottom: "fadeFromBottom 1s ease 0s 1 normal both",
-        fadeFromBottom1: "fadeFromBottom 1s ease 0.2s 1 normal both",
-        fadeFromBottom2: "fadeFromBottom 1s ease 0.3s 1 normal both",
-        fadeFromBottom3: "fadeFromBottom 1s ease 0.4s 1 normal both",
-        fadeFromBottom4: "fadeFromBottom 1s ease 0.5s 1 normal both",
-        fadeFromBottom5: "fadeFromBottom 1s ease 0.6s 1 normal both",
-        fadeFromBottom6: "fadeFromBottom 1s ease 0.7s 1 normal both",
-        fadeFromBottom7: "fadeFromBottom 1s ease 0.8s 1 normal both",
-        fadeFromTopGallery: "fadeFromTopGallery 1s ease 0.1s 1 normal both",
-        fadeFromLeftGallery: "fadeFromLeftGallery 1s ease 0.5s 1 normal both",
-        fadeFromRightGallery: "fadeFromRightGallery 1s ease 0.3s 1 normal both",
-        fadeFromTopNav: "fadeFromTopNav 1s ease 0.5s 1 normal both",
+        fadeFromLeft: "fadeFromLeft 0.6s ease 0s 1 normal both",
+        fadeFromLeft2: "fadeFromLeft 0.6s ease 0.1s 1 normal both",
+        fadeFromLeft3: "fadeFromLeft 0.6s ease 0.75s 1 normal both",
+        fadeFromRight: "fadeFromRight 0.6s ease 0s 1 normal both",
+        fadeFromRight2: "fadeFromRight 0.6s ease 0.4s 1 normal both",
+        fadeFromRight3: "fadeFromRight 0.6s ease 1.25s 1 normal both",
+        fadeIn: "fadeIn 0.6s ease 0s 1 normal both",
+        fadeFromBottom: "fadeFromBottom 0.6s ease 0s 1 normal both",
+        fadeFromBottom1: "fadeFromBottom 0.6s ease 0.1s 1 normal both",
+        fadeFromBottom2: "fadeFromBottom 0.6s ease 0.2s 1 normal both",
+        fadeFromBottom3: "fadeFromBottom 0.6s ease 0.3s 1 normal both",
+        fadeFromBottom4: "fadeFromBottom 0.6s ease 0.4s 1 normal both",
+        fadeFromBottom5: "fadeFromBottom 0.6s ease 0.5s 1 normal both",
+        fadeFromBottom6: "fadeFromBottom 0.6s ease 0.6s 1 normal both",
+        fadeFromBottom7: "fadeFromBottom 0.6s ease 0.7s 1 normal both",
+        fadeFromBottomGalleryLeft: "fadeFromBottomGalleryLeft 0.6s ease 0.8s 1 normal both",
+        fadeFromBottomGalleryRight: "fadeFromBottomGalleryRight 0.6s ease 0.8s 1 normal both",
+        fadeFromTopGallery: "fadeFromTopGallery 0.6s ease 0.1s 1 normal both",
+        fadeFromLeftGallery: "fadeFromLeftGallery 0.6s ease 0.3s 1 normal both",
+        fadeFromRightGallery: "fadeFromRightGallery 0.6s ease 0.2s 1 normal both",
+        fadeFromTopNav: "fadeFromTopNav 0.6s ease 0.5s 1 normal both",
         mobileMenuDrop: "mobileMenuDrop 0.5s ease 0s 1 normal both",
         mobileMenuWithdraw: "mobileMenuWithdraw 0.5s ease 0s 1 normal both",
         dottedLineRevealRight:
           "dottedLineRevealRight 0.4s ease 0.4s 1 normal both",
         dottedLineRevealRight2:
-          "dottedLineRevealRight 0.4s ease 1s 1 normal both",
+          "dottedLineRevealRight 0.4s ease 0.6s 1 normal both",
         dottedLineRevealLeft:
           "dottedLineRevealLeft 0.4s ease 0.7s 1 normal both",
       },
@@ -118,27 +121,29 @@ module.exports = {
         fadeFromLeftGallery: {
           "0%": {
             opacity: 0,
-            transform: "translateX(-50px)",
+            transform: "translateX(-110px) translateY(40px)",
           },
           "40%": {
             opacity: 1,
           },
           "100%": {
             opacity: 1,
-            transform: "translateX(0)",
+            transform: "translateX(-80px) translateY(40px)",
+            
           },
         },
         fadeFromRightGallery: {
           "0%": {
             opacity: 0,
-            transform: "translateX(50px)",
+            transform: "translateX(110px) translateY(80px)",
           },
           "40%": {
             opacity: 1,
           },
           "100%": {
             opacity: 1,
-            transform: "translateX(0)",
+            transform: "translateX(80px) translateY(80px)",
+            
           },
         },
         fadeIn: {
@@ -156,7 +161,26 @@ module.exports = {
           },
           "100%": {
             opacity: 1,
-            transform: "translateY(0px)",
+          },
+        },
+        fadeFromBottomGalleryLeft: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform:"rotate(6deg)"
+          },
+        },
+        fadeFromBottomGalleryLeft: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform:"rotate(-6deg)"
           },
         },
         fadeFromTop: {
@@ -172,14 +196,15 @@ module.exports = {
         fadeFromTopGallery: {
           "0%": {
             opacity: 0,
-            transform: "translateY(-50px)",
+            transform: "translateY(-110px)",
           },
           "40%": {
             opacity: 1,
           },
           "100%": {
             opacity: 1,
-            transform: "translateY(0px)",
+            transform: "translateY(-80px)",
+            
           },
         },
         fadeFromTopNav: {

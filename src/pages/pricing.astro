@@ -4,6 +4,9 @@ import Layout from "../layouts/layout.astro";
 import Pricing from "../components/pricing";
 ---
 
-<Layout>
-  <Pricing />
+<Layout
+  title={"Toastr Pricing: Premium Custom Web Design in Sydney"}
+  description={"Explore our competitive pricing plans for web design and development tailored to your needs."}
+>
+  <Pricing client:load />
 </Layout>

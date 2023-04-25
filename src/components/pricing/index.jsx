@@ -1,59 +1,114 @@
 import Row from "../../layouts/Row";
 import tickSvgReference from "/icons/tick.svg";
+import plusSvgReference from "/icons/plus.svg";
 import Button from "../ui/Button";
+import { useState } from "preact/hooks";
 
 import { v4 } from "uuid";
 
 const PLANS = [
   {
-    title: "Monthly Plan",
-    content: "No minimum commitment or up-front fees. Paid monthly.",
-    price: "A$249/month",
-    caption: "Pause or cancel anytime",
+    title: "Starters",
+    content:
+      "We tailor your business brand to a predesigned custom website template",
+    price: "A$220",
+    upfrontPrice: "A$3,000",
+    addOnPrice: "A$30",
     features: [
-      "5-page static website",
-      "Unlimited design revisions",
-      "Unlimited feedback changes",
-      "Responsive website design",
+      "Responsive templated website design",
+      "Up to 4-page static website",
+      "Google Business profile setup",
+      "Website hosting",
+      "Unlimited content changes",
+      "Google Business profile management",
+      "24/7 Customer support",
+    ],
+    upfrontFeatures: [
+      "Responsive templated website design",
+      "Up to 4-page static website",
+      "Google Business profile setup",
+      "Website hosting",
+    ],
+    upfrontSupport: [
+      "Unlimited content changes",
+      "Google Business profile management",
+      "24/7 Customer support",
+    ],
+  },
+  {
+    title: "Sourdough Deluxe",
+    content:
+      "We design your site from the ground up, to your exact business needs",
+    price: "A$279",
+    upfrontPrice: "A$3,499",
+    addOnPrice: "A$50",
+    features: [
+      "Responsive custom website design",
+      "Up to 4-page static website",
+      "Google Business profile setup",
       "Website hosting",
       "Social Media Integration",
-      "24/7 Customer Support",
+      "Unlimited content + design changes",
+      "Google Business profile management",
+      "24/7 Customer support",
+      "Analytics reports and updates",
+    ],
+    upfrontFeatures: [
+      "Responsive custom website design",
+      "Up to 4-page static website",
+      "Google Business profile setup",
+      "Website hosting",
+      "Social Media Integration",
+    ],
+    upfrontSupport: [
+      "Unlimited content + design changes",
+      "Google Business profile management",
+      "24/7 Customer support",
+      "Analytics reports and updates",
     ],
   },
   {
-    title: "One Time Payment",
-    content: "If you prefer the traditional way, just pay once and that's it",
-    price: "A$3499",
-    caption: "3-month guarantee",
+    title: "Artisan Package",
+    content:
+      "Tailored custom solutions. Send us your project details for an exact quote.",
+    price: "Custom Pricing",
+    upfrontPrice: "Custom Pricing",
+    addOnPrice: "Custom Pricing",
     features: [
-      "All monthly plan features",
-      "12 months customer support",
-      "Ownership of codebase",
-      "Ownership of design files",
+      "All features of Sourdough Deluxe package",
+      "Custom features (eg. e-commerce, blog posts) ",
+      "Google Business profile setup",
+      "Maintenance for custom features",
     ],
-  },
-];
-
-const EXTRAS = [
-  {
-    title: "Add Ons",
-    content:
-      "Looking to add-on extra features? Send us your project details and budget to enquire.",
-    cta: "Book a call >",
-  },
-  {
-    title: "Refer a friend and earn",
-    content:
-      "Earn 10% off your monthly recurring plan for each referral. Did we mention it stacks too?",
-    cta: "Refer a friend >",
+    upfrontFeatures: [
+      "All features of Sourdough Deluxe package",
+      "Custom features (eg. e-commerce, blog posts) ",
+      "Google Business profile setup",
+    ],
+    upfrontSupport: [
+      "All ongoing support from Sourdough Deluxe package",
+      "Maintenance for custom features",
+    ],
   },
 ];
 
 const Pricing = () => {
   const pricingCardStyle =
-    "bg-10 px-10 pt-12 pb-10 rounded-xl shadow-lg max-w-[384px] h-full";
+    "bg-10 px-8 md:px-[8%] px-8 pt-12 pb-10 rounded-xl shadow-sm bg-bg max-w-[360px] mx-auto h-full flex flex-col";
+  const [isMonthly, setIsMonthly] = useState(true);
 
-  const Plan = ({ title, content, price, caption, features, className }) => {
+  const Plan = ({
+    title,
+    content,
+    price,
+    features,
+    className,
+    upfrontPrice,
+    addOnPrice,
+    upfrontFeatures,
+    upfrontSupport,
+    isMonthly,
+  }) => {
     const featureList = features.map((feature) => {
       return (
         <div className="flex items-center gap-4" key={v4()}>
@@ -63,18 +118,81 @@ const Pricing = () => {
       );
     });
 
+    const upfrontFeatureList = upfrontFeatures.map((feature) => {
+      return (
+        <div className="flex items-center gap-4" key={v4()}>
+          <img src={tickSvgReference} alt="tick icon" />
+          <p className="body2">{feature}</p>
+        </div>
+      );
+    });
+
+    const upfrontSupportList = upfrontSupport.map((feature) => {
+      return (
+        <div className="flex items-center gap-4" key={v4()}>
+          <img src={tickSvgReference} alt="tick icon" />
+          <p className="body2">{feature}</p>
+        </div>
+      );
+    });
+
+    const addPageUpfront = () => (
+      <div className="flex items-center gap-4" key={v4()}>
+        <img src={plusSvgReference} alt="plus icon" />
+        <p className="body2">Additional static pages A$100 per page</p>
+      </div>
+    );
+
+    upfrontFeatureList.push(addPageUpfront());
+
+    const addPageMonthly = () => (
+      <div className="flex items-center gap-4" key={v4()}>
+        <img src={plusSvgReference} alt="plus icon" />
+        <p className="body2">Additional static pages A$10/mth per page</p>
+      </div>
+    );
+
+    featureList.push(addPageMonthly());
+
     return (
-      <div className="row-span-2 w-full justify-center">
+      <div className="row-span-2 w-full justify-center ">
         <div className={`${pricingCardStyle} ${className}`}>
           <p className="subtitle-bold mb-2">{title}</p>
           <div className="flex flex-col gap-6">
             <p className="body2 text-80">{content}</p>
             <div className="flex flex-col gap-2">
-              <p className="subtitle">{price}</p>
-              <p className="caption text-80">{caption}</p>
+              <p className="subtitle font-medium">
+                {isMonthly ? price : upfrontPrice}
+                {isMonthly && <span className="ml-1 text-caption">/mth</span>}
+              </p>
+              <p className="caption text-80">
+                {isMonthly
+                  ? "Cancel or pause anytime."
+                  : "Upfront cost. 3-month guarantee."}
+              </p>
             </div>
           </div>
-          <div className="mt-8 mb-12 w-full lg:my-8">
+          <div
+            className={`mt-6 flex flex-col gap-[0.6rem] ${
+              !isMonthly ? "mb-8 min-h-[180px]" : "mb-12"
+            }`}
+          >
+            {isMonthly ? featureList : upfrontFeatureList}
+          </div>
+          {!isMonthly && (
+            <div className="mb-10 flex flex-col">
+              <hr className="mb-10 opacity-10" />
+              <p className="mb-2 text-caption text-80">Add on support</p>
+              <p className="subtitle font-medium">
+                {addOnPrice}
+                <span className="ml-1 text-caption">/mth</span>
+              </p>
+              <div className="mt-6 mb-10 flex flex-col gap-[0.6rem]">
+                {upfrontSupportList}
+              </div>
+            </div>
+          )}
+          <div className="mb-12 mt-auto w-full lg:mb-4">
             <a
               href="https://calendly.com/toastrstudio/30min"
               target="_blank"
@@ -83,28 +201,6 @@ const Pricing = () => {
               <Button full>Book a call</Button>
             </a>
           </div>
-          <hr className="h-[1px] border-none bg-80 opacity-50" />
-          <div className="mt-6 flex flex-col gap-[0.4rem]">{featureList}</div>
-        </div>
-      </div>
-    );
-  };
-
-  const Extra = ({ title, content, cta, className }) => {
-    return (
-      <div className="flex w-full justify-center">
-        <div className={`${pricingCardStyle} ${className}`}>
-          <p className="subtitle-bold ">{title}</p>
-          <p className="body2 mt-4 text-80">{content}</p>
-          <p className="button-large-text mt-12 -ml-4 w-max rounded-lg px-4 py-2 text-primary transition-colors hover:bg-bg hover:underline">
-            <a
-              href="https://calendly.com/toastrstudio/30min"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {cta}
-            </a>
-          </p>
         </div>
       </div>
     );
@@ -112,28 +208,59 @@ const Pricing = () => {
 
   return (
     <div
-      className="full-width-section bg-bg pt-8 pb-20 md:pt-16 lg:pt-12"
+      className="full-width-section bg-10 pt-8 pb-0 md:pt-20 lg:pt-16"
       id="pricing"
     >
-      <Row className="mb-12 flex animate-fadeFromBottom flex-col gap-2 px-6 text-center md:px-0">
-        <p className="subtitle-bold text-primary">Pricing</p>
+      <Row className="mb-8 flex animate-fadeFromBottom flex-col gap-2 px-6 text-center md:px-0">
+        <p className="subtitle-bold ">Pricing</p>
         <h2>Choose a plan that works for you</h2>
       </Row>
+      <Row>
+        <div className="mx-auto mb-8 flex w-max animate-fadeFromBottom1 flex-row rounded-3xl bg-10 py-2 px-2 shadow-md">
+          <button
+            className={`rounded-3xl  py-2 px-4 ${
+              !isMonthly ? "bg-10 text-secondary" : "bg-secondary text-10"
+            }`}
+            onClick={() => {
+              setIsMonthly(true);
+            }}
+          >
+            Monthly
+          </button>
+          <button
+            className={`rounded-3xl ${
+              isMonthly ? "bg-10 text-secondary" : "bg-secondary text-10"
+            }  py-2 px-4 `}
+            onClick={() => {
+              setIsMonthly(false);
+            }}
+          >
+            Upfront
+          </button>
+        </div>
+      </Row>
       <Row
+        sm={1}
+        em={9}
         className={
-          "flex grid-cols-2 flex-col items-center gap-8 px-6 text-left md:grid md:items-stretch md:px-0 lg:grid-cols-3 lg:grid-rows-2"
+          "flex grid-cols-2 flex-col items-center gap-8 px-6 text-left md:grid md:grid-cols-3 md:items-stretch lg:px-0 "
         }
       >
         <Plan
           {...PLANS[0]}
-          className="row-span-2 animate-fadeFromBottom2"
+          isMonthly={isMonthly}
+          className="row-span-2 animate-fadeFromBottom"
         ></Plan>
         <Plan
           {...PLANS[1]}
-          className="row-span-2 animate-fadeFromBottom4"
+          isMonthly={isMonthly}
+          className="row-span-2 animate-fadeFromBottom1"
         ></Plan>
-        <Extra {...EXTRAS[0]} className="animate-fadeFromBottom6"></Extra>
-        <Extra {...EXTRAS[1]} className="animate-fadeFromBottom7"></Extra>
+        <Plan
+          {...PLANS[2]}
+          isMonthly={isMonthly}
+          className="row-span-2 animate-fadeFromBottom2"
+        ></Plan>
       </Row>
     </div>
   );

@@ -3,103 +3,109 @@ import Row from "../../layouts/Row";
 import Reason from "./reason";
 
 import satisfactionIconReference from "/icons/satisfaction.svg";
-import monthlyIconReference from "/icons/monthly.svg";
+import monthlyIconReference from "/icons/miniSeo.svg";
 import analyticsIconReference from "/icons/analytics.svg";
-import serviceIconReference from "/icons/support.svg";
-import socialIconReference from "/icons/social.svg";
-import lightningIconReference from "/icons/lightning.svg";
+import serviceIconReference from "/icons/hosting.svg";
+import lightningIconReference from "/icons/speed.svg";
 
 import Button from "../ui/Button";
 ---
 
-<div class="full-width-section bg-bg pb-16 pt-2 md:pt-6 lg:pt-2" id="why">
+<div
+  class="full-width-section bg-10 px-[5%] pb-16 pt-10 md:px-0 md:pt-20 lg:pt-16"
+  id="why"
+>
   <Row
-    className={"mt-8 mb-12 flex flex-col gap-2 text-center md:my-12 animate-fadeFromBottom"}
+    className={"mt-0 mb-12 flex flex-col gap-2 text-center md:mb-12 animate-fadeFromBottom "}
   >
-    <p class="subtitle-bold text-primary">Why Us</p>
-    <h2>What you get</h2>
+    <p class="subtitle-bold">Benefits</p>
+    <h2>Delivering all your website needs</h2>
   </Row>
   <Row
-    className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 items-center"
+    ss={1}
+    es={7}
+    sl={1}
+    el={15}
+    className="grid max-w-[500px] px-2 md:px-6 md:max-w-none lg:max-w-[1280px] mx-auto grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 items-start bg-bg p-8 rounded-xl shadow-sm"
   >
     <div class="flex animate-fadeFromBottom1 justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[240px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
         <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">
-          100% Satisfaction. 0% Risk.
-        </p>
+        <p class="subtitle-bold mt-0 md:mt-4">100% Satisfaction. 0% Risk.</p>
         <p class="body">
-          Cancel anytime. No deposit. 3-month refund period. We guarantee your
-          satisfaction.
+          Pay nothing unless you are happy with your site. Cancel anytime. No
+          deposit. We guarantee your satisfaction.
         </p>
       </div>
     </div>
     <div class="flex animate-fadeFromBottom2 justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
         <img src={serviceIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">24/7 Customer Service</p>
+        <p class="subtitle-bold mt-0 md:mt-4">24/7 Hosting & Support</p>
         <p class="body">
-          Responsive and available to offer support when you need it. Feel
-          looked after with us
+          Want to update or add something? Get unlimited support from us when
+          you need it, we{"'"}re just a text away.
         </p>
       </div>
     </div>
     <div class="flex animate-fadeFromBottom3 justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
         <img src={analyticsIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">Google Analytics</p>
+        <p class="subtitle-bold mt-0 md:mt-4">Website Analytics</p>
         <p class="body">
-          Measure your traffic and learn how to convert visitors into customers
+          We install state-of-the-art analytics software to identify how your
+          website is performing, and uncover areas with further optimisation
+          potential.
         </p>
       </div>
     </div>
     <div class="flex animate-fadeFromBottom4 justify-center">
       <div
-        class="flex h-[260px] w-[300px] cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[240px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
-        <img src={socialIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">Social Media Integration</p>
+        <img src="/icons/responsive.png" alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-0 md:mt-4">Mobile-Friendly Design</p>
         <p class="body">
-          Embed social feeds, review platforms, and other social tools to
-          showcase your work
+          60% of internet traffic is on mobile. We ensure your website looks
+          beautiful on all screen sizes to impress the widest audience.
         </p>
       </div>
     </div>
     <div class="flex justify-center">
       <div
-        class="flex h-[260px] w-[300px] animate-fadeFromBottom5 cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[220px] w-[410px] animate-fadeFromBottom5 cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
         <img src={lightningIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">Lightning speed</p>
+        <p class="subtitle-bold mt-0 md:mt-4">Ultra-High Performance</p>
         <p class="body">
-          Ultra-fast performance to help you rank highly on search engines and
-          bring traffic to your website.
+          Every single line of code is custom-coded and optimised to improve
+          your customer experience and make Google{"'"}s search algorithm happy.
         </p>
       </div>
     </div>
     <div class="flex justify-center">
       <div
-        class="flex h-[260px] w-[300px] animate-fadeFromBottom6 cursor-default flex-col items-center justify-center gap-2 rounded-xl bg-10 px-4 text-center shadow-lg md:h-[250px] md:w-[300px] lg:px-5"
+        class="flex h-[220px] w-[410px] animate-fadeFromBottom6 cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
         <img src={monthlyIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-4 text-primary">
-          All Inclusive Monthly Plan
+        <p class="subtitle-bold mt-0 md:mt-4">
+          Search Engine Optimisation (SEO)
         </p>
         <p class="body">
-          Hosting, technical support, unlimited updates built in to simplify
-          your experience.
+          Our holistic SEO approach optimises both keywords and performance,
+          which are the most critical factors in getting ahead of the
+          competitors.
         </p>
       </div>
     </div>
   </Row>
-
-  <Row className={"mt-16 flex justify-center animate-fadeFromBottom7"}>
+  <Row className={"mt-8 md:mt-16 flex justify-center animate-fadeFromBottom7"}>
     <a href="/pricing">
       <Button full={false}>See Plans</Button>
     </a>

@@ -2,16 +2,14 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { getImage } from "@astrojs/image";
+import { AstroComponentInstance } from "astro/dist/runtime/server";
+import { SEO } from "astro-seo";
+const { page, title, description } = Astro.props;
 ---
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/icons/icon.png" type="image/x-icon" />
-  <link
-    rel="prefetch"
-    href="https://toastr.com.au/_astro/about_Z20AsGi.avif"
-    as="image"
-  />
   <link
     rel="preload"
     href="/fonts/DMSans-Bold.woff2"
@@ -33,29 +31,14 @@ import { getImage } from "@astrojs/image";
     type="font/woff2"
     crossorigin
   />
-  <meta
-    name="description"
-    content="Your one stop shop for web design and development to build your online presence. Get a beautiful website with Toastr with unlimited edits and technical support."
-  />
-  <title>Toastr: Website Design and Development for Small Businesses</title>
+  <SEO title={title} description={description} />
+  <body>
+    <main>
+      <div class="full-grid">
+        <Header client:load page={page} />
+        <slot />
+        <Footer />
+      </div>
+    </main>
+  </body>
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9K8H2WZQEY"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "G-9K8H2WZQEY");
-</script>
-<body>
-  <main>
-    <div class="full-grid">
-      <Header client:load />
-      <slot />
-      <Footer />
-    </div>
-  </main>
-</body>

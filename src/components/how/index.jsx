@@ -24,8 +24,8 @@ const steps = [
     iconL: (
       <img src={step1LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "Request a free consultation",
-    body: "We listen to your individual business needs to design your ideal website.",
+    heading: "Book a free consultation ",
+    body: "We understand your business goals and needs, so we can discuss where we can help. It's completely free and there are no strings attached.",
     gridString: "lg:row-start-1 lg:col-start-1",
   },
   {
@@ -34,7 +34,7 @@ const steps = [
       <img src={step2LIconReference} alt="decorative icon" loading="lazy" />
     ),
     heading: "Receive your free custom website design",
-    body: "Unlimited revisions until you are 100% satisfied. No strings attached.",
+    body: "We understand that your website is a reflection of your business and we want it to be perfect. That's why we offer unlimited design changes until you're 100% satisfied with the end result.",
     gridString: "lg:row-start-2 lg:col-start-2",
   },
   {
@@ -43,7 +43,7 @@ const steps = [
       <img src={step3LIconReference} alt="decorative icon" loading="lazy" />
     ),
     heading: "40+ hours of coding & development",
-    body: "100% hand-coded. Every line of code is written for maximum performance. No downpayment or deposit required.",
+    body: "100% hand-coded. Every line of code is written for maximum performance, to ensure the best customer experience and SEO.",
     gridString: "lg:row-start-3 lg:col-start-1",
   },
   {
@@ -51,8 +51,8 @@ const steps = [
     iconL: (
       <img src={step4LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "Make it live!",
-    body: "Hosting, 24/7 technical support and unlimited content changes starting at $249/mo. Cancel or pause anytime.",
+    heading: "Make your website live!",
+    body: "We host and maintain your website so you can focus on your business. With our unlimited design changes and technical support, you can be sure that your website will always be up to date.",
     gridString: "lg:row-start-4 lg:col-start-2",
   },
 ];
@@ -108,22 +108,17 @@ const How = () => {
   ];
 
   return (
-    <div className="full-width-section mb-24 pt-10 md:pt-20 lg:pt-10" id="how">
-      <div
-        className={
-          "full-width-section -z-10 -mt-64 -mb-16 hidden min-h-[350px] lg:block"
-        }
-      >
-        <div className="wave-container-small"></div>
-      </div>
+    <div className="full-width-section mb-6 pt-10 md:pt-20 lg:pt-16" id="how">
       <Row className="mb-16 flex animate-fadeFromBottom flex-col gap-4 text-center">
-        <p className="subtitle-bold text-primary">How It Works</p>
-        <h2>4 simple steps to build your dream website</h2>
+        <p className="subtitle-bold text-secondary">How We Jam</p>
+        <h2>Building your website in 4 steps</h2>
       </Row>
       <Row
-        className="mb-20 flex flex-col items-center gap-16 lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:gap-4 lg:gap-x-8"
-        sl={3}
-        el={13}
+        ss={1}
+        es={7}
+        className="mb-8 flex max-w-[1000px] flex-col items-center gap-16 px-6 md:mb-16 md:px-0 lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:gap-4 lg:gap-x-8"
+        sl={2}
+        el={14}
       >
         {connectorIcons}
         {stepsElements}
@@ -134,7 +129,7 @@ const How = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <Button>Book a Free 30 Minute Consultation</Button>
+          <Button>Book a Free Consult</Button>
         </a>
       </Row>
     </div>

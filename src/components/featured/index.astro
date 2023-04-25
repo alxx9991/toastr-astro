@@ -1,0 +1,32 @@
+---
+import Row from "../../layouts/Row";
+import { Picture } from "astro-imagetools/components";
+---
+
+<div class="full-width-section mb-16">
+  <Row className="flex flex-col gap-2">
+    <p class="subtitle-bold text-center">Featured Client</p>
+    <h2 class="text-center">We let our work speak for itself</h2>
+  </Row>
+  <Row className="mt-12 max-w-[700px] lg:max-w-[1100px]" client:idle>
+    <a
+      href="https://hkhairdresser.com.au"
+      target="_blank"
+      class="mx-auto hidden transition-all duration-500 hover:scale-[1.02] md:block"
+      ><Picture
+        src="/images/hk.png"
+        alt="example of our work, hk hairdresser"
+        breakpoints={[700, 1100]}
+        sizes="(min-width: 1280px) 1100px, 700px"
+      /></a
+    >
+    <a href="https://hkhairdresser.com.au" target="_blank" class="md:hidden"
+      ><Picture
+        src="/images/hkMobile.png"
+        alt="example of our work, hk hairdresser"
+        class="mx-auto transition-all duration-500 hover:scale-[1.02]"
+        breakpoints={[378]}
+      /></a
+    >
+  </Row>
+</div>

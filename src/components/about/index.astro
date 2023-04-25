@@ -1,55 +1,55 @@
 ---
 import Row from "../../layouts/Row";
-import { Picture } from "@astrojs/image/components";
+import { Picture } from "astro-imagetools/components";
+import astericksSvgReference from "/icons/astericks.svg";
 ---
 
-<div
-  class={"full-width-section -z-10 -mt-44 -mb-24 hidden min-h-[350px] lg:block"}
->
-  <div class="wave-container-small"></div>
-</div>
-<div class="full-width-section mb-16 md:pt-4 lg:mb-24 lg:pt-0" id="about">
+<div class="full-width-section md:mb-16 md:pt-20 lg:mb-10 lg:pt-16" id="about">
   <Row
-    className={"mt-8 mb-12 flex flex-col gap-4 text-center md:my-12 lg:mt-0 animate-fadeFromBottom"}
+    className={"mt-8 mb-20 flex flex-col gap-4 text-center md:mb-12 md:mt-0 animate-fadeFromBottom"}
   >
-    <p class="subtitle-bold text-primary">About Us</p>
-    <h2>Meet the pair behind Toastr</h2>
-  </Row>
-  <Row>
-    <div
-      class="flex flex-col items-center gap-8 lg:flex-row lg:justify-evenly lg:gap-8"
-    >
-      <div class="animate-fadeFromBottom2 md:max-w-[584px]">
-        <Picture
-          height={920}
-          width={1168}
-          src={"/images/about.webp"}
-          alt="Alex and Anna"
-          sizes="(min-width:0px)"
-          widths={[1168]}
-          aspectRatio={"1168:920"}
-        />
-      </div>
-      <div
-        class="flex animate-fadeFromBottom4 flex-col gap-2 px-4 md:max-w-[584px] md:pt-4 lg:max-w-[420px]"
-      >
-        <p class="subtitle-bold text-primary">Our Story</p>
-        <p class="body text-left">
-          Hi, we{"'"}re the co-founders, Alex and Anna. Having worked with small
-          business owners, we discovered that many were dissatisfied with their
-          business websites. <br />
-          <br /> They were initially attracted by low-cost quotes but ultimately
-          received outdated, sluggish, and buggy websites that didn't meet their
-          expectations.<br />
-        </p>
-        <p class="subtitle-bold pt-8 text-primary">Our Mission</p>
-        <p class="body text-left">
-          A good business website instills trust in the customers, and
-          exemplifies the professionalism of the service. Our mission is to
-          bring the power of fast, beautiful, modern websites back to the
-          people.
-        </p>
-      </div>
+    <p class="subtitle-bold">About Us</p><h2>Meet the pair behind Toastr</h2>
+    <div class="absolute bottom-[-52px] w-full md:bottom-[-75%]">
+      <img
+        src={astericksSvgReference}
+        alt="decoration"
+        height={42}
+        width={42}
+        class="mx-auto"
+      />
     </div>
   </Row>
 </div>
+<Row ss={1} es={7}>
+  <div
+    class="flex flex-col items-center gap-4 lg:flex-row lg:justify-evenly lg:gap-8"
+  >
+    <div
+      class="max-w-[350px] animate-fadeFromBottom2 overflow-clip rounded-2xl md:max-w-[572px]"
+    >
+      <Picture
+        src={"/images/about.png"}
+        alt="Alex and Anna"
+        breakpoints={[350, 572]}
+        sizes="(min-width: 768px) 572px, 350px"
+        fit="contain"
+      />
+    </div>
+    <div
+      class="flex max-w-[400px] animate-fadeFromBottom4 flex-col gap-2 px-8 md:max-w-[584px] md:px-4 md:pb-16 md:pt-4 lg:max-w-[420px] lg:pb-0"
+    >
+      <p class="subtitle-bold">Who we are</p>
+      <p class="body text-left">
+        We{"'"}re Alex and Anna, two Sydney based humans who are the proud
+        owners of Toastr with a passion for curating beautiful, modern and
+        responsive websites.
+      </p>
+      <p class="subtitle-bold pt-8">Our Mission</p>
+      <p class="body text-left">
+        Our mission is to build beautiful, professional sites for local
+        businesses that stands out from the competition and gets clients through
+        their doors.
+      </p>
+    </div>
+  </div>
+</Row>
