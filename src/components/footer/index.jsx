@@ -50,7 +50,7 @@ const Footer = () => {
           </nav>
         </div>
         <p className="body2 mt-4 text-80 lg:hidden">
-          Copyright 2022. Toastr. All rights reserved.
+          © Copyright 2022. Toastr. All rights reserved.
         </p>
       </Row>
     </footer>
