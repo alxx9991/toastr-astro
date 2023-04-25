@@ -16,19 +16,26 @@ const Benefits = () => {
       heading: "Web Design and Development",
       content:
         "No Wix, Weebly or Wordpress. We custom design and hand-code your website with your target customers in mind. ",
-      icon: <img src={developmentSvgReference} />,
+      icon: (
+        <img src={developmentSvgReference} alt="web development service icon" />
+      ),
     },
     {
       heading: "On-page SEO",
       content:
         "We optimize your website's content, performance, and keywords to rank higher in search engine results, so more customers find you. ",
-      icon: <img src={seoSvgReference} />,
+      icon: <img src={seoSvgReference} alt="seo service icon" />,
     },
     {
       heading: "Google Business Management",
       content:
         "We manage and optimise your Google profile on your behalf and get you to rank above your competitors on Google Maps. ",
-      icon: <img src={googleBusinessSvgReference} />,
+      icon: (
+        <img
+          src={googleBusinessSvgReference}
+          alt="google business service icon"
+        />
+      ),
     },
   ];
 
