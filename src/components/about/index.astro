@@ -25,13 +25,22 @@ import astericksSvgReference from "/icons/astericks.svg";
     class="flex flex-col items-center gap-4 lg:flex-row lg:justify-evenly lg:gap-8"
   >
     <div
-      class="max-w-[350px] animate-fadeFromBottom2 overflow-clip rounded-2xl md:max-w-[572px]"
+      class="hidden animate-fadeFromBottom2 overflow-clip rounded-2xl md:block md:max-w-[572px]"
     >
       <Picture
-        src={"/images/about.png"}
+        src={"/images/about.jpg"}
         alt="Alex and Anna"
-        breakpoints={[350, 572]}
-        sizes="(min-width: 768px) 572px, 350px"
+        breakpoints={[1144]}
+        fit="contain"
+      />
+    </div>
+    <div
+      class="block max-w-[350px] animate-fadeFromBottom2 overflow-clip rounded-2xl md:hidden"
+    >
+      <Picture
+        src={"/images/about.jpg"}
+        alt="Alex and Anna"
+        breakpoints={[700]}
         fit="contain"
       />
     </div>
