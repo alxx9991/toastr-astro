@@ -28,7 +28,7 @@ const Footer = () => {
               Toastr
             </a>
             <p className="body lg:caption mt-3 hidden text-80 lg:block">
-              Copyright 2022. Toastr. All rights reserved.
+              © Copyright 2022. Toastr. All rights reserved.
             </p>
           </div>
           <nav className="mt-4 flex flex-col gap-8 md:flex-row lg:mt-0">
