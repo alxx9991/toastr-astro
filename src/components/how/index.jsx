@@ -24,7 +24,7 @@ const steps = [
     iconL: (
       <img src={step1LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "Book a free consultation ",
+    heading: "Book a free strategy consultation ",
     body: "We understand your business goals and needs, so we can discuss where we can help. It's completely free and there are no strings attached.",
     gridString: "lg:row-start-1 lg:col-start-1",
   },
@@ -33,8 +33,8 @@ const steps = [
     iconL: (
       <img src={step2LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "Receive your free custom website design",
-    body: "We understand that your website is a reflection of your business and we want it to be perfect. That's why we offer unlimited design changes until you're 100% satisfied with the end result.",
+    heading: "Preview design",
+    body: "Once we gather your website requirements, see the design come to life and get unlimited revisions until you’re 100% satisfied.",
     gridString: "lg:row-start-2 lg:col-start-2",
   },
   {
@@ -42,7 +42,7 @@ const steps = [
     iconL: (
       <img src={step3LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "40+ hours of coding & development",
+    heading: "80+ hours of coding & development",
     body: "100% hand-coded. Every line of code is written for maximum performance, to ensure the best customer experience and SEO.",
     gridString: "lg:row-start-3 lg:col-start-1",
   },
@@ -51,8 +51,8 @@ const steps = [
     iconL: (
       <img src={step4LIconReference} alt="decorative icon" loading="lazy" />
     ),
-    heading: "Make your website live!",
-    body: "We host and maintain your website so you can focus on your business. With our unlimited design changes and technical support, you can be sure that your website will always be up to date.",
+    heading: "Launch!",
+    body: "We host and maintain your website so you can focus on your business whilst ensuring your website will always be up to date. Call or text us any time to make design changes, or get technical support. Receive monthly analytics to view your website performance.",
     gridString: "lg:row-start-4 lg:col-start-2",
   },
 ];
@@ -108,7 +108,7 @@ const How = () => {
   ];
 
   return (
-    <div className="full-width-section mb-6 pt-10 md:pt-20 lg:pt-16" id="how">
+    <div className="full-width-section mb-16 pt-10 md:pt-20 lg:pt-16" id="how">
       <Row className="mb-16 flex animate-fadeFromBottom flex-col gap-4 text-center">
         <p className="subtitle-bold text-secondary">How We Jam</p>
         <h2>Building your website in 4 steps</h2>

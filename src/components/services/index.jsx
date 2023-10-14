@@ -15,7 +15,7 @@ const Benefits = () => {
     {
       heading: "Web Design and Development",
       content:
-        "No Wix, Weebly or Wordpress. We custom design and hand-code your website with your target customers in mind. ",
+        "No Wix, Weebly or Wordpress templates. We custom design and hand-code a website tailored to your target customers.",
       icon: (
         <img src={developmentSvgReference} alt="web development service icon" />
       ),
@@ -23,13 +23,13 @@ const Benefits = () => {
     {
       heading: "On-page SEO",
       content:
-        "We optimize your website's content, performance, and keywords to rank higher in search engine results, so more customers find you. ",
+        "Get your website's content, performance, and keywords optimised to rank higher in search engine results, so more customers find you.",
       icon: <img src={seoSvgReference} alt="seo service icon" />,
     },
     {
       heading: "Google Business Management",
       content:
-        "We manage and optimise your Google profile on your behalf and get you to rank above your competitors on Google Maps. ",
+        "Have your Google profile managed and watch your business rank above competitors on Google Maps.",
       icon: (
         <img
           src={googleBusinessSvgReference}
@@ -59,7 +59,9 @@ const Benefits = () => {
         className={"mb-12 flex flex-col gap-4 px-12 text-center md:px-0"}
       >
         <p className="subtitle-bold">Services</p>
-        <h2>Delivering custom web solutions</h2>
+        <h2 className="mx-auto max-w-[600px]">
+          Accelerate success with our tailored solutions
+        </h2>
       </Row>
       <Row
         ss={1}

@@ -1,6 +1,5 @@
 ---
 import Row from "../../layouts/Row";
-import Reason from "./reason";
 
 import satisfactionIconReference from "/icons/satisfaction.svg";
 import monthlyIconReference from "/icons/miniSeo.svg";
@@ -28,40 +27,15 @@ import Button from "../ui/Button";
     el={15}
     className="grid max-w-[500px] px-2 md:px-6 md:max-w-none lg:max-w-[1280px] mx-auto grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 items-start bg-bg p-8 rounded-xl shadow-sm"
   >
-    <div class="flex animate-fadeFromBottom1 justify-center">
+    <div class="flex justify-center">
       <div
-        class="flex h-[240px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
+        class="flex h-[220px] w-[410px] animate-fadeFromBottom5 cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
       >
-        <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-0 md:mt-4">100% Satisfaction. 0% Risk.</p>
+        <img src={lightningIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-0 md:mt-4">Ultra-High Performance</p>
         <p class="body">
-          Pay nothing unless you are happy with your site. Cancel anytime. No
-          deposit. We guarantee your satisfaction.
-        </p>
-      </div>
-    </div>
-    <div class="flex animate-fadeFromBottom2 justify-center">
-      <div
-        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
-      >
-        <img src={serviceIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-0 md:mt-4">24/7 Hosting & Support</p>
-        <p class="body">
-          Want to update or add something? Get unlimited support from us when
-          you need it, we{"'"}re just a text away.
-        </p>
-      </div>
-    </div>
-    <div class="flex animate-fadeFromBottom3 justify-center">
-      <div
-        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
-      >
-        <img src={analyticsIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-0 md:mt-4">Website Analytics</p>
-        <p class="body">
-          We install state-of-the-art analytics software to identify how your
-          website is performing, and uncover areas with further optimisation
-          potential.
+          Every single line of code is custom-coded and optimised to improve
+          your customer experience and make Google{"'"}s search algorithm happy.
         </p>
       </div>
     </div>
@@ -74,18 +48,6 @@ import Button from "../ui/Button";
         <p class="body">
           60% of internet traffic is on mobile. We ensure your website looks
           beautiful on all screen sizes to impress the widest audience.
-        </p>
-      </div>
-    </div>
-    <div class="flex justify-center">
-      <div
-        class="flex h-[220px] w-[410px] animate-fadeFromBottom5 cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
-      >
-        <img src={lightningIconReference} alt="reason icon" loading="lazy" />
-        <p class="subtitle-bold mt-0 md:mt-4">Ultra-High Performance</p>
-        <p class="body">
-          Every single line of code is custom-coded and optimised to improve
-          your customer experience and make Google{"'"}s search algorithm happy.
         </p>
       </div>
     </div>
@@ -104,10 +66,47 @@ import Button from "../ui/Button";
         </p>
       </div>
     </div>
+    <div class="flex animate-fadeFromBottom2 justify-center">
+      <div
+        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
+      >
+        <img src={serviceIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-0 md:mt-4">24/7 Hosting & Support</p>
+        <p class="body">
+          Want to update or add something? Get unlimited support from us when
+          you need it, we{"'"}re just a text away.
+        </p>
+      </div>
+    </div>
+    <div class="flex animate-fadeFromBottom1 justify-center">
+      <div
+        class="flex h-[240px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
+      >
+        <img src={satisfactionIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-0 md:mt-4">100% Satisfaction. 0% Risk.</p>
+        <p class="body">
+          If you don't like your site, you pay absolutely nothing. We guarantee
+          your satisfaction. We are happy only if you are.
+        </p>
+      </div>
+    </div>
+    <div class="flex animate-fadeFromBottom3 justify-center">
+      <div
+        class="flex h-[220px] w-[410px] cursor-default flex-col items-start justify-center gap-2 px-4 text-left md:h-[270px] lg:px-4"
+      >
+        <img src={analyticsIconReference} alt="reason icon" loading="lazy" />
+        <p class="subtitle-bold mt-0 md:mt-4">Website Analytics</p>
+        <p class="body">
+          We install state-of-the-art analytics software to identify how your
+          website is performing, and uncover areas with further optimisation
+          potential.
+        </p>
+      </div>
+    </div>
   </Row>
   <Row className={"mt-8 md:mt-16 flex justify-center animate-fadeFromBottom7"}>
     <a href="/pricing">
-      <Button full={false}>See Plans</Button>
+      <Button full={false} secondary={false}>See Plans</Button>
     </a>
   </Row>
 </div>
